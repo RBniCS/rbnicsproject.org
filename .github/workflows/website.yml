@@ -16,7 +16,9 @@ jobs:
         pre-build-command: "pip3 -q install sphinx-material"
         docs-folder: .
     - name: Fix email addresses
-      run: find _build/html -type f -exec sed -i 's/%40/@/g' {} +
+      run: |
+        sudo chown $USER _build -R
+        find _build/html -type f -exec sed -i 's/%40/@/g' {} +
     - name: Deploy to GitHub pages
       uses: peaceiris/actions-gh-pages@v3
       with:
