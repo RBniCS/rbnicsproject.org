@@ -14,10 +14,3 @@ If you use **RBniCS** in your work, please use the following citations to refere
     }
 
 and cite the `RBniCS website <https://www.rbnicsproject.org>`__.
-
-
-Publications
-============
-TODO
-
-Is your publication missing? Contact us by `email <mailto:info@rbnicsproject.org>`__ to have your publication added to the list.

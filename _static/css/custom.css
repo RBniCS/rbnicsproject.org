@@ -83,7 +83,7 @@ button[data-md-color-accent=mathlab] {
 }
 
 /* Hide undesired items */
-.md-sidebar--primary, .md-sidebar--secondary, .md-footer {
+.md-sidebar--secondary, .md-footer {
     display: None
 }
 
@@ -95,6 +95,12 @@ button[data-md-color-accent=mathlab] {
 @media only screen and (min-width: 60em) {
     .md-content {
       margin-right: 1.0rem;
+    }
+}
+
+@media only screen and (min-width: 76.25em) {
+    .md-sidebar--primary {
+        display: None
     }
 }
 
