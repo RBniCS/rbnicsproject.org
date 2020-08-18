@@ -1,0 +1,337 @@
+@unpublished{GorodetskyJakemanGeraci2020,
+  author = {Alex Gorodetsky and John D. Jakeman and Gianluca Geraci},
+  title = {{MFNets}: Learning network representations for multifidelity surrogate modeling},
+  year = {2020},
+  note = {Submitted},
+  url = {https://arxiv.org/abs/2008.02672},
+}
+
+@unpublished{StrazzulloBallarinRozza2020b,
+  author = {Maria Strazzullo and Francesco Ballarin and Gianluigi Rozza},
+  title = {{POD}-{G}alerkin Model Order Reduction for Parametrized Nonlinear Time Dependent Optimal Flow Control: an Application to Shallow Water Equations},
+  year = {2020},
+  note = {Submitted},
+  url = {https://arxiv.org/abs/2003.09695},
+  abstract = {In this work we propose reduced order methods as a reliable strategy to efficiently solve parametrized optimal control problems governed by shallow waters equations in a solution tracking setting. The physical parametrized model we deal with is nonlinear and time dependent: this leads to very time consuming simulations which can be unbearable e.g. in a marine environmental monitoring plan application. Our aim is to show how reduced order modelling could help in studying different configurations and phenomena in a fast way. After building the optimality system, we rely on a POD-Galerkin reduction in order to solve the optimal control problem in a low dimensional reduced space. The presented theoretical framework is actually suited to general nonlinear time dependent optimal control problems. The proposed methodology is finally tested with a numerical experiment: the reduced optimal control problem governed by shallow waters equations reproduces the desired velocity and height profiles faster than the standard model, still remaining accurate.}
+}
+
+@article{AliBallarinRozza2020,
+  author = {Shafqat Ali and Francesco Ballarin and Gianluigi Rozza},
+  title = {Stabilized reduced basis methods for parametrized steady {S}tokes and {N}avier-{S}tokes equations},
+  year = {2020},
+  journal = {Computers & Mathematics with Applications},
+  doi = {10.1016/j.camwa.2020.03.019},
+  abstract = {It is well known in the Reduced Basis approximation of saddle point problems that the Galerkin projection on the reduced space does not guarantee the inf-sup approximation stability even if a stable high fidelity method was used to generate snapshots. For problems in computational fluid dynamics, the lack of inf-sup stability is reflected by the inability to accurately approximate the pressure field. In this context, inf-sup stability is usually recovered through the enrichment of the velocity space with suitable supremizer functions. The main goal of this work is to propose an alternative approach, which relies on the residual based stabilization techniques customarily employed in the Finite Element literature, such as Brezzi-Pitkaranta, Franca-Hughes, streamline upwind Petrov-Galerkin, Galerkin Least Square. In the spirit of offline-online reduced basis computational splitting, two such options are proposed, namely offline-only stabilization and offline-online stabilization. These approaches are then compared to (and combined with) the state of the art supremizer enrichment approach. Numerical results are discussed, highlighting that the proposed methodology allows to obtain smaller reduced basis spaces (i.e., neglecting supremizer enrichment) for which a modified inf-sup stability is still preserved at the reduced order level.}
+}
+
+@article{KaratzasBallarinRozza2020,
+  author = {Karatzas, Efthymios N. and Ballarin, Francesco and Rozza, Gianluigi},
+  title = {Projection-based reduced order models for a cut finite element method in parametrized domains},
+  journal = {Computers & Mathematics with Applications},
+  volume = {79},
+  number = {3},
+  pages = {833--851},
+  year = {2020},
+  doi = {10.1016/j.camwa.2019.08.003},
+  abstract = {This work presents a reduced order modelling technique built on a high fidelity embedded mesh finite element method. Such methods, and in particular the CutFEM method, are attractive in the generation of projection-based reduced order models thanks to their capabilities to seamlessly handle large deformations of parametrized domains. The combination of embedded methods and reduced order models allows us to obtain fast evaluation of parametrized problems, avoiding remeshing as well as the reference domain formulation, often used in the reduced order modelling for boundary fitted finite element formulations. The resulting novel methodology is presented on linear elliptic and Stokes problems, together with several test cases to assess its capability. The role of a proper extension and transport of embedded solutions to a common background is analyzed in detail.}
+}
+
+@article{StrazzulloBallarinRozza2020,
+  author = {Maria Strazzullo and Francesco Ballarin and Gianluigi Rozza},
+  title = {{POD}--{G}alerkin Model Order Reduction for Parametrized Time Dependent Linear Quadratic Optimal Control Problems in Saddle Point Formulation},
+  journal = {Journal of Scientific Computing},
+  volume = {83},
+  number = {3},
+  pages = {55},
+  year = {2020},
+  doi = {10.1007/s10915-020-01232-x},
+  abstract = {In this work we deal with parametrized time dependent optimal control problems governed by partial differential equations. We aim at extending the standard saddle point framework of steady constraints to time dependent cases. We provide an analysis of the well-posedness of this formulation both for parametrized scalar parabolic constraint and Stokes governing equations and we propose reduced order methods as an effective strategy to solve them. Indeed, on one hand, parametrized time dependent optimal control is a very powerful mathematical model which is able to describe several physical phenomena, on the other, it requires a huge computational effort. Reduced order methods are a suitable approach to have rapid and accurate simulations. We rely on POD-Galerkin reduction over the physical and geometrical parameters of the optimality system in a space-time formulation. Our theoretical results and our methodology are tested on two examples: a boundary time dependent optimal control for a Graetz flow and a distributed optimal control governed by time dependent Stokes equations. With these two test cases the convenience of the reduced order modelling is further extended to the field of time dependent optimal control.}
+}
+
+@article{ZainibBallarinFremesTriverioJimenezJuanRozza2020,
+  author = {Zakia Zainib and Francesco Ballarin and Stephen Fremes and Piero Triverio and Laura Jiménez-Juan and Gianluigi Rozza},
+  title = {Reduced order methods for parametric optimal flow control in coronary bypass grafts, towards patient-specific data assimilation},
+  year = {2020},
+  doi = {10.1002/cnm.3367},
+  journal = {International Journal for Numerical Methods in Biomedical Engineering},
+  abstract = {Coronary artery bypass grafts (CABG) surgery is an invasive procedure performed to circumvent partial or complete blood flow blockage in coronary artery disease (CAD). In this work, we apply a numerical optimal flow control model to patient-specific geometries of CABG, reconstructed from clinical images of real-life surgical cases, in parameterized settings. The aim of these applications is to match known physiological data with numerical hemodynamics corresponding to different scenarios, arisen by tuning some parameters. Such applications are an initial step towards matching patient-specific physiological data in patient-specific vascular geometries as best as possible.
+Two critical challenges that reportedly arise in such problems are, (i). lack of robust quantification of meaningful boundary conditions required to match known data as best as possible and (ii). high computational cost. In this work, we utilize unknown control variables in the optimal flow control problems to take care of the first challenge. Moreover, to address the second challenge, we propose a time-efficient and reliable computational environment for such parameterized problems by projecting them onto a low-dimensional solution manifold through proper orthogonal decomposition (POD)--Galerkin.}
+}
+
+@article{BigoniHesthaven2020,
+  title = {Simulation-based Anomaly Detection and Damage Localization: An application to Structural Health Monitoring},
+  journal = {Computer Methods in Applied Mechanics and Engineering},
+  volume = {363},
+  pages = {112896},
+  year = {2020},
+  doi = {10.1016/j.cma.2020.112896},
+  author = {Caterina Bigoni and Jan S. Hesthaven},
+  abstract = {We propose a simulation-based decision strategy for the proactive maintenance of complex structures with a particular application to structural health monitoring (SHM). The strategy is based on a data-driven approach which exploits an offline–online decomposition. A synthetic dataset is constructed offline by solving a parametric time-dependent partial differential equation for multiple input parameters, sampled from their probability distributions of natural variation. The collected time-signals, extracted at sensor locations, are used to train classifiers at such sensor locations, thus constructing multiple databases of healthy configurations. These datasets are then used to train one class Support Vector Machines (OC-SVMs) to detect anomalies. During the online stage, a new measurement, possibly obtained from a damaged configuration, is evaluated using the classifiers. Information on damage is provided in a hierarchical manner: first, using a binary feedback, the entire structure response is either classified as inlier (healthy) or outlier (damaged). Then, for the outliers, we exploit the outputs of multiple classifiers to retrieve information both on the severity and the spatial location of the damages. Because of the large number of signals needed to construct the datasets offline, a model order reduction strategy is implemented to reduce the computational burden. We apply this strategy to both 2D and 3D problems to mimic the vibrational behavior of complex structures under the effect of an active source and show the effectiveness of the approach for detecting and localizing cracks.}
+}
+
+@unpublished{PichiQuainiRozza2020,
+  author = {Pichi, Federico and Quaini, Annalisa and Rozza, Gianluigi},
+  title = {A Reduced Order technique to study bifurcating phenomena: application to the {G}ross-{P}itaevskii equation},
+  year = {2020},
+  abstract = {We propose a computationally efficient framework to treat nonlinear partial differential equations having bifurcating solutions as one or more physical control parameters are varied. Our focus is on steady bifurcations. Plotting a bifurcation diagram entails computing multiple solutions of a parametrized, nonlinear problem, which can be extremely expensive in terms of computational time. In order to reduce these demanding computational costs, our approach combines a continuation technique and Newton's method with a Reduced Order Modeling (ROM) technique, suitably supplemented with a hyper-reduction method. To demonstrate the effectiveness of our ROM approach, we trace the steady solution branches of a nonlinear Schrödinger equation, called Gross-Pitaevskii equation, as one or two physical parameters are varied. In the two parameter study, we show that our approach is 60 times faster in constructing a bifurcation diagram than a standard Full Order Method.},
+  note = {Submitted},
+  url = {https://arxiv.org/abs/1907.07082},
+}
+
+@article{PichiRozza2019,
+  author = {Pichi, Federico and Rozza, Gianluigi},
+  title = {Reduced basis approaches for parametrized bifurcation problems held by non-linear Von Kármán equations},
+  year = {2019},
+  abstract = {This work focuses on the computationally efficient detection of the buckling phenomena and bifurcation analysis of the parametric Von Kármán plate equations based on reduced order methods and spectral analysis. The computational complexity - due to the fourth order derivative terms, the non-linearity and the parameter dependence - provides an interesting benchmark to test the importance of the reduction strategies, during the construction of the bifurcation diagram by varying the parameter(s). To this end, together the state equations, we carry out also an analysis of the linearized eigenvalue problem, that allows us to better understand the physical behaviour near the bifurcation points, where we lose the uniqueness of solution. We test this automatic methodology also in the two parameter case, understanding the evolution of the first buckling mode.},
+  journal = {Journal of Scientific Computing},
+  doi = {10.1007/s10915-019-01003-3},
+  volume = {81},
+  number = {1},
+  pages = {112--135},
+}
+
+@phdthesis{Zainib2019,
+  author = {Zakia Zainib},
+  title = {Reduced order parametrized viscous optimal flow control problems and applications in coronary artery bypass grafts with patient-specific geometrical reconstruction and data assimilation},
+  school = {Mathematical Analysis, Modelling, and Applications, SISSA, Italy},
+  year = {2019},
+  month = {Sep.},
+  url = {http://hdl.handle.net/20.500.11767/103036}
+}
+
+@mastersthesis{Genovese2019,
+  author = {Julien Genovese},
+  title = {Reduced order methods for uncertainty quantification in computational fluid dynamics},
+  school = {Mathematical Engineering, Politecnico di Torino, Italy},
+  year = {2019},
+  month = {Oct.},
+  url = {https://webthesis.biblio.polito.it/11989/1/tesi.pdf}
+}
+
+@article{BaroliZilian2019,
+  author = {Baroli, Davide and Zilian, Andreas},
+  title = {Model order reduction applied to {ALE}-fluid dynamics},
+  journal = {PAMM},
+  volume = {19},
+  number = {1},
+  pages = {e201900437},
+  doi = {10.1002/pamm.201900437},
+  abstract = {Abstract The Arbitrary Lagrangian Eulerian formulation allows the description of fluid dynamics involving moving and deforming fluid domains as they are found in many fluid-structure interaction problems. This paper discusses a reduced order approach for ALE incompressible Navier-Stokes flow formulated on a fixed reference configuration. Based on the proper orthogonal decomposition (POD) for generation of the reduced basis, the supermizer technique is adapted to the formulation involving a non-affine term and used to ensure the fulfilment of the inf-sup condition among the velocity and pressure basis. The approach is studied for an extended version of the classical driven-cavity setup involving a non-affine parameterization of the prescribed mesh deformation and a time-dependent non-homogeneous lid-flow boundary condition.},
+  year = {2019}
+}
+
+@unpublished{StrazzulloZainibBallarinRozza2019,
+  author = {Maria Strazzullo and Zakia Zainib and Francesco Ballarin and Gianluigi Rozza},
+  title = {Reduced order methods for parametrized non-linear and time dependent optimal flow control problems, towards applications in biomedical and environmental sciences},
+  year = {2019},
+  note = {Submitted},
+  url = {https://arxiv.org/abs/1912.07886},
+  abstract = {We introduce reduced order methods as an efficient strategy to solve parametrized non-linear and time dependent optimal flow control problems governed by partial differential equations. Indeed, optimal control problems require a huge computational effort in order to be solved, most of all in a physical and/or geometrical parametrized setting. Reduced order methods are a reliably suitable approach, increasingly gaining popularity, to achieve rapid and accurate optimal solutions in several fields, such as in biomedical and environmental sciences. In this work, we exploit POD-Galerkin reduction over a parametrized optimality system, derived from Karush-Kuhn-Tucker conditions. The methodology presented is tested on two boundary control problems, governed respectively by (i) time dependent Stokes equations and (ii) steady non-linear Navier-Stokes equations.}
+}
+
+@unpublished{NoninoBallarinRozzaMaday2019,
+  author = {Monica Nonino and Francesco Ballarin and Gianluigi Rozza and Yvon Maday},
+  title = {Overcoming slowly decaying Kolmogorov n-width by transport maps: application to model order reduction of fluid dynamics and fluid--structure interaction problems},
+  year = {2019},
+  note = {Submitted},
+  url = {https://arxiv.org/abs/1911.06598},
+  abstract = {In this work we focus on reduced order modelling for problems for which the resulting reduced basis spaces show a slow decay of the Kolmogorov n-width, or, in practical calculations, its computational surrogate given by the magnitude of the eigenvalues returned by a proper orthogonal decomposition on the solution manifold. In particular, we employ an additional preprocessing during the offline phase of the reduced basis method, in order to obtain smaller reduced basis spaces. Such preprocessing is based on the composition of the snapshots with a transport map, that is a family of smooth and invertible mappings that map the physical domain of the problem into itself. Two test cases are considered: a fluid moving in a domain with deforming walls, and a fluid past a rotating cylinder. Comparison between the results of the novel offline stage and the standard one is presented.}
+}
+
+@unpublished{ZancanaroBallarinPerottoRozza2019,
+  author = {Matteo Zancanaro and Francesco Ballarin and Simona Perotto and Gianluigi Rozza},
+  title = {Hierarchical Model Reduction Techniques for Flow Modeling in a Parametrized Setting},
+  year = {2019},
+  note = {Submitted},
+  url = {https://arxiv.org/abs/1909.01668},
+  abstract = {In this work we focus on two different methods to deal with parametrized partial differential equations in an efficient and accurate way. Starting from high fidelity approximations built via the hierarchical model reduction discretization, we consider two approaches, both based on a projection model reduction technique. The two methods differ for the algorithm employed during the construction of the reduced basis. In particular, the former employs the proper orthogonal decomposition, while the latter relies on a greedy algorithm according to the certified reduced basis technique. The two approaches are preliminarily compared on two-dimensional scalar and vector test cases.}
+}
+
+@incollection{VenturiTorloBallarinRozza2019,
+  author = {Venturi, Luca and Torlo, Davide and Ballarin, Francesco and Rozza, Gianluigi},
+  title = {Weighted Reduced Order Methods for Parametrized Partial Differential Equations with Random Inputs},
+  year = {2019},
+  booktitle = {Uncertainty Modeling for Engineering Applications},
+  editor = {Canavero, Flavio},
+  publisher = {Springer International Publishing},
+  pages = {27--40},
+  doi = {10.1007/978-3-030-04870-9_2},
+  abstract = {In this manuscript we discuss weighted reduced order methods for stochastic partial differential equations. Random inputs (such as forcing terms, equation coefficients, boundary conditions) are considered as parameters of the equations. We take advantage of the resulting parametrized formulation to propose an efficient reduced order model; we also profit by the underlying stochastic assumption in the definition of suitable weights to drive to reduction process. Two viable strategies are discussed, namely the weighted reduced basis method and the weighted proper orthogonal decomposition method. A numerical example on a parametrized elasticity problem is shown.}
+}
+
+@article{StabileBallarinZuccarinoRozza2019,
+  author = {Stabile, Giovanni and Ballarin, Francesco and Zuccarino, Giacomo and Rozza, Gianluigi},
+  title = {A reduced order variational multiscale approach for turbulent flows},
+  year = {2019},
+  journal = {Advances in Computational Mathematics},
+  volume = {45},
+  number = {5},
+  pages = {2349-2368},
+  doi = {10.1007/s10444-019-09712-x},
+  abstract = {The purpose of this work is to present a reduced order modeling framework for parametrized turbulent flows with moderately high Reynolds numbers within the variational multiscale (VMS) method. The Reduced Order Models (ROMs) presented in this manuscript are based on a POD-Galerkin approach with a VMS stabilization technique. Two different reduced order models are presented, which differ on the stabilization used during the Galerkin projection. In the first case the VMS stabilization method is used at both the full order and the reduced order level. In the second case, the VMS stabilization is used only at the full order level, while the projection of the standard Navier-Stokes equations is performed instead at the reduced order level. The former method is denoted as consistent ROM, while the latter is named non-consistent ROM, in order to underline the different choices made at the two levels. Particular attention is also devoted to the role of inf-sup stabilization by means of supremizers in ROMs based on a VMS formulation. Finally, the developed methods are tested on a numerical benchmark.}
+}
+
+@article{GunzburgerSchneierWebsterZhang2019,
+  title = {An improved discrete least-squares/reduced-basis method for parameterized elliptic PDEs},
+  author = {Gunzburger, Max and Schneier, Michael and Webster, Clayton and Zhang, Guannan},
+  journal = {Journal of Scientific Computing},
+  volume = {81},
+  number = {1},
+  pages = {76--91},
+  year = {2019},
+  publisher = {Springer},
+  doi = {10.1007/s10915-018-0661-6},
+  abstract = {It is shown that the computational efficiency of the discrete least-squares (DLS) approximation of solutions of stochastic elliptic PDEs is improved by incorporating a reduced-basis method into the DLS framework. In particular, we consider stochastic elliptic PDEs with an affine dependence on the random variable. The goal is to recover the entire solution map from the parameter space to the finite element space. To this end, first, a reduced-basis solution using a weak greedy algorithm is constructed, then a DLS approximation is determined by evaluating the reduced-basis approximation instead of the full finite element approximation. The main advantage of the new approach is that one only need apply the DLS operator to the coefficients of the reduced-basis expansion, resulting in huge savings in both the storage of the DLS coefficients and the online cost of evaluating the DLS approximation. In addition, the recently developed quasi-optimal polynomial space is also adopted in the new approach, resulting in superior convergence rates for a wider class of problems than previous analyzed. Numerical experiments are provided that illustrate the theoretical results.}
+}
+
+@phdthesis{Ali2018,
+  author = {Shafqat Ali},
+  title = {Stabilized reduced basis methods for the approximation of parametrized viscous flows},
+  school = {Mathematical Analysis, Modelling, and Applications, SISSA, Italy},
+  year = {2018},
+  month = {Sep.},
+  url = {http://hdl.handle.net/20.500.11767/82794}
+}
+
+@article{VenturiBallarinRozza2018,
+  author = {Venturi, Luca and Ballarin, Francesco and Rozza, Gianluigi},
+  title = {A Weighted {POD} Method for Elliptic {PDE}s with Random Inputs},
+  year = {2019},
+  journal={Journal of Scientific Computing},
+  volume={81},
+  number={1},
+  pages={136--153},
+  doi={10.1007/s10915-018-0830-7},
+  abstract = {In this work we propose and analyze a weighted proper orthogonal decomposition method to solve elliptic partial differential equations depending on random input data, for stochastic problems that can be transformed into parametric systems. The algorithm is introduced alongside the weighted greedy method. Our proposed method aims to minimize the error in a L2 norm and, in contrast to the weighted greedy approach, it does not require the availability of an error bound. Moreover, we consider sparse discretization of the input space in the construction of the reduced model; for high-dimensional problems, provided the sampling is done accordingly to the parameters distribution, this enables a sensible reduction of computational costs, while keeping a very good accuracy with respect to high fidelity solutions.
+We provide many numerical tests to asses the performance of the proposed method compared to an equivalent reduced order model without weighting, as well as to the weighted greedy approach, in both low and higher dimensional problems.}
+}
+
+@incollection{HijaziAliStabileBallarinRozza2018,
+  author = {Hijazi, Saddam and Ali, Shafqat and Stabile, Giovanni and Ballarin, Francesco and Rozza, Gianluigi},
+  editor = {van Brummelen, Harald and Corsini, Alessandro and Perotto, Simona and Rozza, Gianluigi},
+  title = {The Effort of Increasing {R}eynolds Number in Projection-Based Reduced Order Methods: From Laminar to Turbulent Flows},
+  bookTitle = {Numerical Methods for Flows: {FEF} 2017 Selected Contributions},
+  year = {2020},
+  publisher = {Springer International Publishing},
+  pages = {245--264},
+  abstract = {We present in this double contribution two different reduced order strategies for incompressible parameterized Navier-Stokes equations characterized by varying Reynolds numbers. The first strategy deals with low Reynolds number (laminar flow) and is based on a stabilized finite element method during the offline stage followed by a Galerkin projection on reduced basis spaces generated by a greedy algorithm. The second methodology is based on a full order finite volume discretization. The latter methodology will be used for flows with moderate to high Reynolds number characterized by turbulent patterns. For the treatment of the mentioned turbulent flows at the reduced order level, a new POD-Galerkin approach is proposed. The new approach takes into consideration the contribution of the eddy viscosity also during the online stage and is based on the use of interpolation. The two methodologies are tested on classic benchmark test cases.},
+  doi = {10.1007/978-3-030-30705-9_22},
+}
+
+@article{StrazzulloBallarinMosettiRozza2018,
+  author = {Strazzullo, Maria and Ballarin, Francesco and Mosetti, Renzo and Rozza, Gianluigi},
+  title = {Model Reduction for Parametrized Optimal Control Problems in Environmental Marine Sciences and Engineering},
+  journal = {SIAM Journal on Scientific Computing},
+  volume = {40},
+  number = {4},
+  pages = {B1055-B1079},
+  year = {2018},
+  doi = {10.1137/17M1150591},
+  abstract = {We propose reduced order methods as a suitable approach to face parametrized optimal control problems governed by partial differential equations, with applications in en- vironmental marine sciences and engineering. Environmental parametrized optimal control problems are usually studied for different configurations described by several physical and/or geometrical parameters representing different phenomena and structures. The solution of parametrized problems requires a demanding computational effort. In order to save com- putational time, we rely on reduced basis techniques as a reliable and rapid tool to solve parametrized problems. We introduce general parametrized linear quadratic optimal control problems, and the saddle-point structure of their optimality system. Then, we propose a POD-Galerkin reduction of the optimality system. Finally, we test the resulting method on two environmental applications: a pollutant control in the Gulf of Trieste, Italy and a solution tracking governed by quasi-geostrophic equations describing North Atlantic Ocean dynamic. The two experiments underline how reduced order methods are a reliable and convenient tool to manage several environmental optimal control problems, for different mathematical models, geographical scale as well as physical meaning.}
+}
+
+@article{TorloBallarinRozza2018,
+  author = {Torlo, Davide and Ballarin, Francesco and Rozza, Gianluigi},
+  title = {Stabilized Weighted Reduced Basis Methods for Parametrized Advection Dominated Problems with Random Inputs},
+  journal = {SIAM/ASA Journal on Uncertainty Quantification},
+  volume = {6},
+  number = {4},
+  pages = {1475-1502},
+  year = {2018},
+  doi = {10.1137/17M1163517},
+  abstract = {In this work, we propose viable and efficient strategies for stabilized parametrized advection dominated problems, with random inputs. In particular, we investigate the combination of the wRB (weighted reduced basis) method for stochastic parametrized problems with the stabilized RB (reduced basis) method, which is the integration of classical stabilization methods (streamline/upwind Petrov--Galerkin (SUPG) in our case) in the offline--online structure of the RB method. Moreover, we introduce a reduction method that selectively enables online stabilization; this leads to a sensible reduction of computational costs, while keeping a very good accuracy with respect to high-fidelity solutions. We present numerical test cases to assess the performance of the proposed methods in steady and unsteady problems related to heat transfer phenomena.}
+}
+
+@incollection{TezzeleBallarinRozza2018,
+  author = {Tezzele, Marco and Ballarin, Francesco and Rozza, Gianluigi},
+  title = {Combined parameter and model reduction of cardiovascular problems by means of active subspaces and {POD}-{G}alerkin methods},
+  address = {Cham},
+  booktitle = {Mathematical and Numerical Modeling of the Cardiovascular System and Applications},
+  doi = {10.1007/978-3-319-96649-6_8},
+  editor = {Boffi, Daniele and Pavarino, Luca F. and Rozza, Gianluigi and Scacchi, Simone and Vergara, Christian},
+  isbn = {978-3-319-96649-6},
+  pages = {185--207},
+  publisher = {Springer International Publishing},
+  year = {2018},
+  abstract = {In this chapter we introduce a combined parameter and model reduction methodology and present its application to the efficient numerical estimation of a pressure drop in a set of deformed carotids. The aim is to simulate a wide range of possible occlusions after the bifurcation of the carotid. A parametric description of the admissible deformations, based on radial basis functions interpolation, is introduced. Since the parameter space may be very large, the first step in the combined reduction technique is to look for active subspaces in order to reduce the parameter space dimension. Then, we rely on model order reduction methods over the lower dimensional parameter subspace, based on a POD-Galerkin approach, to further reduce the required computational effort and enhance computational efficiency.}
+}
+
+@inbook{HuynhPichiRozza2018,
+  author = {Huynh, Dinh Bao Phuong and Pichi, Federico and Rozza, Gianluigi},
+  title = {Reduced basis approximation and a posteriori error estimation: applications to elasticity problems in several parametric settings},
+  year = {2018},
+  editor = {Di Pietro, Daniele Antonio and Ern, Alexandre and Formaggia, Luca},
+  booktitle = {Numerical Methods for PDEs: State of the Art Techniques},
+  publisher = {Springer International Publishing},
+  pages = {203--247},
+  volume = {15},
+  doi = {10.1007/978-3-319-94676-4_8},
+  abstract = {In this work we consider (hierarchical, Lagrange) reduced basis approximation and a posteriori error estimation for elasticity problems in affinley parametrized geometries. The essential ingredients of the methodology are: a Galerkin projection onto a low-dimensional space associated with a smooth "parametric manifold" - dimension reduction, an efficient and effective greedy sampling methods for identification of optimal and numerically stable approximations - rapid convergence, an a posteriori error estimation procedures - rigorous and sharp bounds for the functional outputs related with the underlying solution or related quantities of interest, like stress intensity factor, and Offline-Online computational decomposition strategies - minimum marginal cost for high performance in the real-time and many-query (e.g., design and optimization) contexts. We present several illustrative results for linear elasticity problem in parametrized geometries representing 2D Cartesian or 3D axisymmetric configurations like an arc-cantilever beam, a center crack problem, a composite unit cell or a woven composite beam, a multi-material plate, and a closed vessel. We consider different parametrization for the systems: either physical quantities - to model the materials and loads - and geometrical parameters - to model different geometrical configurations - with isotropic and orthotropic materials working in plane stress and plane strain approximation. We would like to underline the versatility of the methodology in very different problems. As last example we provide a nonlinear setting with increased complexity.}
+}
+
+@incollection{BallarinRozzaMaday2017,
+  title = {Reduced-order semi-implicit schemes for fluid-structure interaction problems},
+  year = {2017},
+  author = {Ballarin, Francesco and Rozza, Gianluigi and Maday, Yvon},
+  editor = {Benner, Peter and Ohlberger, Mario and Patera, Anthony and Rozza, Gianluigi and Urban, Karsten},
+  booktitle = {Model Reduction of Parametrized Systems},
+  publisher = {Springer International Publishing},
+  pages = {149--167},
+  volume = {17},
+  abstract = {POD--Galerkin reduced-order models (ROMs) for fluid-structure interaction problems (incompressible fluid and thin structure) are proposed in this paper. Both the high-fidelity and reduced-order methods are based on a Chorin-Temam operator-splitting approach. Two different reduced-order methods are proposed, which differ on velocity continuity condition, imposed weakly or strongly, respectively. The resulting ROMs are tested and compared on a representative haemodynamics test case characterized by wave propagation, in order to assess the capabilities of the proposed strategies.},
+  doi = {10.1007/978-3-319-58786-8_10},
+}
+
+@mastersthesis{Meglioli2017,
+  author = {Giulia Meglioli},
+  title = {Comparison of model order reduction approaches in parametrized optimal control problems},
+  school = {Mathematical Engineering, Politecnico di Milano, Italy},
+  year = {2017},
+  month = {Dec.},
+  url = {http://hdl.handle.net/10589/137279}
+}
+
+@mastersthesis{Zancanaro2017,
+  author = {Matteo Zancanaro},
+  title = {Hierarchical model reduction techniques for flows in a parametric setting},
+  school = {Aeronautical Engineering, Politecnico di Milano, Italy},
+  year = {2017},
+  month = {Apr.},
+  url = {https://www.politesi.polimi.it/handle/10589/134020}
+}
+
+@mastersthesis{Strazzullo2017,
+  author = {Maria Strazzullo},
+  title = {Reduced order methods for parametric optimal flow control problems: applications in environmental and marine sciences and engineering},
+  school = {Mathematics, University of Trieste, Italy},
+  year = {2017},
+  month = {Mar.},
+  url = {http://people.sissa.it/~grozza/wp-content/uploads/2018/03/Strazzullo.pdf}
+}
+
+@mastersthesis{Venturi2016,
+  author = {Luca Venturi},
+  title = {Weighted reduced order methods for parametrized {PDE}s in uncertainty quantification problems},
+  school = {Mathematics, University of Trieste, Italy},
+  year = {2016},
+  month = {Jul.},
+  url = {http://people.sissa.it/~grozza/wp-content/uploads/2018/03/venturi.pdf}
+}
+
+@mastersthesis{Torlo2016,
+  author = {Davide Torlo},
+  title = {Stabilized reduced basis method for transport {PDE}s with random inputs},
+  school = {Mathematics, University of Trieste, Italy},
+  year = {2016},
+  month = {Jul.},
+  url = {http://people.sissa.it/~grozza/wp-content/uploads/2018/03/torlo.pdf}
+}
+
+@book{HesthavenRozzaStamm2015,
+  author = {Hesthaven, Jan S. and Rozza, Gianluigi and Stamm, Benjamin},
+  title = {Certified Reduced Basis Methods for Parametrized Partial Differential Equations},
+  publisher = {Springer International Publishing},
+  year = {2015},
+  series = {SpringerBriefs in Mathematics},
+  isbn = {978-3-319-22469-5}
+}
