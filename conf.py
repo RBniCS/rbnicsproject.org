@@ -97,7 +97,7 @@ html_theme_options = {
             "title": "How to cite",
         },
         {
-            "href": "citing#publications",
+            "href": "publications",
             "internal": True,
             "title": "Publications",
         },
