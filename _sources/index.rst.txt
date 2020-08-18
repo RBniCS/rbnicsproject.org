@@ -44,6 +44,7 @@ Learn more about RBniCS
     installing
     contributing
     citing
+    publications
 
 License
 -------
