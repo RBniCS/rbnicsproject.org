@@ -1,14 +1,14 @@
 How to contribute
 =================
-.. image:: https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png
+.. image:: _static/images/github-logo.png
     :target: https://github.com/RBniCS/RBniCS
-    :height: 100px
-    :width: 100px
+    :height: 80px
+    :width: 80px
     :alt: Go to repository on GitHub
 .. image:: _static/images/email.png
     :target: mailto:info@rbnicsproject.org
-    :height: 100px
-    :width: 100px
+    :height: 80px
+    :width: 80px
     :alt: Contact us via email
 
 Developement takes place on our `GitHub repository <https://github.com/RBniCS/RBniCS>`__.
