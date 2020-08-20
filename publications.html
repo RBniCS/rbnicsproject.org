@@ -59,12 +59,15 @@
     <title>Publications &#8212; RBniCS - reduced order modelling in FEniCS</title>
     <link rel="stylesheet" href="_static/material.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-dropdown/2.0.3/jquery.dropdown.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Pangolin" />
     <link rel="stylesheet" type="text/css" href="_static/css/custom.css" />
     <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
     <script src="_static/jquery.js"></script>
     <script src="_static/underscore.js"></script>
     <script src="_static/doctools.js"></script>
     <script src="_static/language_data.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-dropdown/2.0.3/jquery.dropdown.min.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="prev" title="How to cite" href="citing.html" />
@@ -157,16 +160,6 @@
         </div>
       
       
-  
-  <script src="_static/javascripts/version_dropdown.js"></script>
-  <script>
-    var json_loc = ""versions.json"",
-        target_loc = "../",
-        text = "Versions";
-    $( document ).ready( add_version_dropdown(json_loc, target_loc, text));
-  </script>
-  
-
     </div>
   </nav>
 </header>
@@ -189,7 +182,7 @@
             
             <li class="md-tabs__item"><a href="citing.html" class="md-tabs__link">How to cite</a></li>
             
-            <li class="md-tabs__item"><a href="#" class="md-tabs__link">Publications</a></li>
+            <li class="md-tabs__item md-tabs__item_current"><a href="#" class="md-tabs__link">Publications</a></li>
       </ul>
     </div>
   </nav>
@@ -259,7 +252,7 @@
     <li class="md-nav__item">
     
     
-    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc_disabled">
     <label class="md-nav__link md-nav__link--active" for="__toc"> Publications </label>
     
       <a href="#" class="md-nav__link md-nav__link--active">Publications</a>
