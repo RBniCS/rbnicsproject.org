@@ -68,8 +68,8 @@ class Tutorials(Directive):
 
     def run(self):
         output = list()
-        for (category, tutorials_in_category) in categories.items():
-            output.append(nodes.raw(text=f"<h2>{category}</h2>", format="html"))
+        for (category_id, (category, tutorials_in_category)) in enumerate(categories.items()):
+            output.append(nodes.raw(text=self._category_title(category_id, category), format="html"))
             cards = list()
             for num in tutorials_in_category:
                 data = tutorials[num]
@@ -93,13 +93,20 @@ class Tutorials(Directive):
                     buttons=buttons
                 )
                 cards.append(card_num)
-            output.append(nodes.raw(text=self._card_container(cards), format="html"))
+            output.append(nodes.raw(text=self._card_container(category_id, cards), format="html"))
         return output
 
     @staticmethod
-    def _card_container(cards):
+    def _category_title(category_id, category):
+        return f"""
+<input type="checkbox" name="category-toggle-{category_id}" id="category-toggle-{category_id}" class="tutorial-category-toggle">
+<label for="category-toggle-{category_id}" class="tutorial-category-title">{category}</label>
+"""
+
+    @staticmethod
+    def _card_container(category_id, cards):
         card_container = """
-<div class="tutorial-container">
+<div class="tutorial-container" id="tutorial-category-{category_id}">
   <div class="tutorial-row">
 """
         for card in cards:
