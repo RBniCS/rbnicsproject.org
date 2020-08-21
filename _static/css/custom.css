@@ -196,6 +196,7 @@ button[data-md-color-accent=mathlab] {
    https://www.w3schools.com/howto/howto_css_column_cards.asp */
 .tutorial-container {
     box-sizing: border-box;
+    display: none;
 }
 
 .tutorial-column {
@@ -245,4 +246,38 @@ button[data-md-color-accent=mathlab] {
 .tutorial-buttons {
     display: flex;
     flex-wrap: wrap;
+}
+
+/* Toggleable divs
+   https://stackoverflow.com/questions/37080838/is-there-a-css-code-for-double-click-element-or-another-way-to-solve-this */
+
+.tutorial-category-toggle {
+    display: none;
+}
+
+.tutorial-category-title {
+    /* copied from h2 */
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: 300;
+    letter-spacing: -.01em;
+    margin: 2rem 0 .8rem;
+    font-size: 1.25rem;
+    line-height: 1.4;
+    cursor: pointer;
+    color: rgba(0,0,0,.87);
+}
+
+.tutorial-category-title:after {
+    font-family: Material Icons;
+    content: 'expand_more';
+    margin-left: 6px;
+}
+
+.tutorial-category-toggle:checked + .tutorial-category-title + div.tutorial-container {
+    display: block;
 }
