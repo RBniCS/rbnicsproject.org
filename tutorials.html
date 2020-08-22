@@ -298,6 +298,18 @@
             
   
 <span id="id1"></span><h1 id="tutorials--page-root">Tutorials<a class="headerlink" href="#tutorials--page-root" title="Permalink to this headline">¶</a></h1>
+<p>
+<b>RBniCS</b> is accompanied by several tutorials, that can be run on a local installation of the library,
+or interactively in any web browser either
+on <a href="https://colab.research.google.com/">Google Colab</a> or
+on <a href="https://argos.sissa.it/tutorials">ARGOS</a>, the Advanced Reduced Groupware Online Simulation platform,
+without any required installation.
+<div class="tutorial-buttons">
+<a href="https://github.com/RBniCS/RBniCS/tree/master/tutorials"><div class="tutorial-button"><img src="_static/images/github-logo.png" style="vertical-align: middle; width: 25px"/> View all tutorials on GitHub</div></a>
+<a href="https://youtu.be/AD0sq2wjYKE"><div class="tutorial-button"><img src="_static/images/colab-logo.png" style="vertical-align: middle; width: 25px"/> Video on how to run tutorials on Google Colab</div></a>
+<a href="https://argos.sissa.it/"><div class="tutorial-button"><img src="_static/images/argos-logo.png" style="vertical-align: middle; width: 25px"/> Learn more about ARGOS</div></a>
+</div>
+</p>
 <input class="tutorial-category-toggle" id="category-toggle-0" name="category-toggle-0" type="checkbox"/>
 <label class="tutorial-category-title" for="category-toggle-0">Introductory tutorials</label>
 <div class="tutorial-container" id="tutorial-category-{category_id}">
@@ -385,7 +397,7 @@
 <div class="jq-dropdown jq-dropdown-tip" id="tutorial-dropdown-2">
 <ul class="jq-dropdown-menu">
 <li><a href="tutorials/04/1/notebook">Case 1: with parameter-independent boundary conditions</a></li>
-<li><span class="in-progress">Case 2: with parametrized boundary conditions <img src="_static/images/work-in-progress.png" style="vertical-align: middle; width: 25px"/></span></li>
+<li><a href="tutorials/04/2/notebook">Case 2: with parametrized boundary conditions</a></li>
 </ul>
 </div>
 <div class="tutorial-button" data-jq-dropdown="#tutorial-dropdown-2"><img src="_static/images/colab-logo.png" style="vertical-align: middle; width: 25px"/> Run on Google Colab</div>
@@ -424,8 +436,8 @@
 <div class="jq-dropdown jq-dropdown-tip" id="tutorial-dropdown-5">
 <ul class="jq-dropdown-menu">
 <li><a href="tutorials/05/eim/notebook">EIM</a></li>
-<li><span class="in-progress">DEIM <img src="_static/images/work-in-progress.png" style="vertical-align: middle; width: 25px"/></span></li>
-<li><span class="in-progress">Inefficient <img src="_static/images/work-in-progress.png" style="vertical-align: middle; width: 25px"/></span></li>
+<li><a href="tutorials/05/deim/notebook">DEIM</a></li>
+<li><a href="tutorials/05/inefficient/notebook">Inefficient</a></li>
 </ul>
 </div>
 <div class="tutorial-button" data-jq-dropdown="#tutorial-dropdown-5"><img src="_static/images/colab-logo.png" style="vertical-align: middle; width: 25px"/> Run on Google Colab</div>
@@ -451,7 +463,7 @@
       Unsteady thermal block problem
     </h3>
 <div class="tutorial-description">
-<p>Reduced basis method for (scalar) elliptic problems</p>
+<p>Reduced basis and POD-Galerkin methods for (scalar) parabolic problems</p>
 </div>
 <div class="tutorial-buttons">
 <div class="jq-dropdown jq-dropdown-tip" id="tutorial-dropdown-7">
@@ -465,7 +477,17 @@
 </ul>
 </div>
 <div class="tutorial-button" data-jq-dropdown="#tutorial-dropdown-7"><img src="_static/images/github-logo.png" style="vertical-align: middle; width: 25px"/> View on GitHub</div>
-<div class="tutorial-button tutorial-button-in-progress"><img src="_static/images/work-in-progress.png" style="vertical-align: middle; width: 25px"/> Run on Google Colab</div>
+<div class="jq-dropdown jq-dropdown-tip" id="tutorial-dropdown-8">
+<ul class="jq-dropdown-menu">
+<li><a href="tutorials/06/1_rb/notebook">Case 1-RB: homogeneous boundary and initial conditions, reduction with reduced basis method</a></li>
+<li><a href="tutorials/06/1_pod/notebook">Case 1-POD: homogeneous boundary and initial conditions, reduction with POD-Galerkin method</a></li>
+<li><span class="in-progress">Case 2-RB: homogeneous boundary conditions, non-homogeneous initial conditions, reduction with reduced basis method <img src="_static/images/work-in-progress.png" style="vertical-align: middle; width: 25px"/></span></li>
+<li><span class="in-progress">Case 2-POD: homogeneous boundary conditions, non-homogeneous initial conditions, reduction with POD-Galerkin method <img src="_static/images/work-in-progress.png" style="vertical-align: middle; width: 25px"/></span></li>
+<li><span class="in-progress">Case 3-RB: non-homogeneous boundary and initial conditions, reduction with reduced basis method <img src="_static/images/work-in-progress.png" style="vertical-align: middle; width: 25px"/></span></li>
+<li><span class="in-progress">Case 3-POD: non-homogeneous boundary and initial conditions, reduction with POD-Galerkin method <img src="_static/images/work-in-progress.png" style="vertical-align: middle; width: 25px"/></span></li>
+</ul>
+</div>
+<div class="tutorial-button" data-jq-dropdown="#tutorial-dropdown-8"><img src="_static/images/colab-logo.png" style="vertical-align: middle; width: 25px"/> Run on Google Colab</div>
 <div class="tutorial-button tutorial-button-in-progress"><img src="_static/images/work-in-progress.png" style="vertical-align: middle; width: 25px"/> Run on ARGOS</div>
 </div>
 </div>
@@ -490,15 +512,22 @@
 <p>Empirical interpolation methods for nonlinear elliptic problems</p>
 </div>
 <div class="tutorial-buttons">
-<div class="jq-dropdown jq-dropdown-tip" id="tutorial-dropdown-8">
+<div class="jq-dropdown jq-dropdown-tip" id="tutorial-dropdown-9">
 <ul class="jq-dropdown-menu">
 <li><a href="tutorials/07/eim/file">EIM</a></li>
 <li><a href="tutorials/07/deim/file">DEIM</a></li>
 <li><a href="tutorials/07/inefficient/file">Inefficient</a></li>
 </ul>
 </div>
-<div class="tutorial-button" data-jq-dropdown="#tutorial-dropdown-8"><img src="_static/images/github-logo.png" style="vertical-align: middle; width: 25px"/> View on GitHub</div>
-<div class="tutorial-button tutorial-button-in-progress"><img src="_static/images/work-in-progress.png" style="vertical-align: middle; width: 25px"/> Run on Google Colab</div>
+<div class="tutorial-button" data-jq-dropdown="#tutorial-dropdown-9"><img src="_static/images/github-logo.png" style="vertical-align: middle; width: 25px"/> View on GitHub</div>
+<div class="jq-dropdown jq-dropdown-tip" id="tutorial-dropdown-10">
+<ul class="jq-dropdown-menu">
+<li><a href="tutorials/07/eim/notebook">EIM</a></li>
+<li><a href="tutorials/07/deim/notebook">DEIM</a></li>
+<li><a href="tutorials/07/inefficient/notebook">Inefficient</a></li>
+</ul>
+</div>
+<div class="tutorial-button" data-jq-dropdown="#tutorial-dropdown-10"><img src="_static/images/colab-logo.png" style="vertical-align: middle; width: 25px"/> Run on Google Colab</div>
 <div class="tutorial-button tutorial-button-in-progress"><img src="_static/images/work-in-progress.png" style="vertical-align: middle; width: 25px"/> Run on ARGOS</div>
 </div>
 </div>
@@ -518,7 +547,7 @@
 </div>
 <div class="tutorial-buttons">
 <a href="tutorials/08/file"><div class="tutorial-button"><img src="_static/images/github-logo.png" style="vertical-align: middle; width: 25px"/> View on GitHub</div></a>
-<div class="tutorial-button tutorial-button-in-progress"><img src="_static/images/work-in-progress.png" style="vertical-align: middle; width: 25px"/> Run on Google Colab</div>
+<a href="tutorials/08/notebook"><div class="tutorial-button"><img src="_static/images/colab-logo.png" style="vertical-align: middle; width: 25px"/> Run on Google Colab</div></a>
 <div class="tutorial-button tutorial-button-in-progress"><img src="_static/images/work-in-progress.png" style="vertical-align: middle; width: 25px"/> Run on ARGOS</div>
 </div>
 </div>
@@ -537,14 +566,14 @@
 <p>One-way coupling between a fluid dynamics problem based on Stokes and an elliptic equation (e.g., temperature, concentration)</p>
 </div>
 <div class="tutorial-buttons">
-<div class="jq-dropdown jq-dropdown-tip" id="tutorial-dropdown-9">
+<div class="jq-dropdown jq-dropdown-tip" id="tutorial-dropdown-11">
 <ul class="jq-dropdown-menu">
 <li><a href="tutorials/16/eim/file">EIM</a></li>
 <li><a href="tutorials/16/deim/file">DEIM</a></li>
 <li><a href="tutorials/16/inefficient/file">Inefficient</a></li>
 </ul>
 </div>
-<div class="tutorial-button" data-jq-dropdown="#tutorial-dropdown-9"><img src="_static/images/github-logo.png" style="vertical-align: middle; width: 25px"/> View on GitHub</div>
+<div class="tutorial-button" data-jq-dropdown="#tutorial-dropdown-11"><img src="_static/images/github-logo.png" style="vertical-align: middle; width: 25px"/> View on GitHub</div>
 <div class="tutorial-button tutorial-button-in-progress"><img src="_static/images/work-in-progress.png" style="vertical-align: middle; width: 25px"/> Run on Google Colab</div>
 <div class="tutorial-button tutorial-button-in-progress"><img src="_static/images/work-in-progress.png" style="vertical-align: middle; width: 25px"/> Run on ARGOS</div>
 </div>
@@ -564,30 +593,30 @@
 <p>One-way coupling between a fluid dynamics problem based on Stokes and an elliptic equation (e.g., temperature, concentration)</p>
 </div>
 <div class="tutorial-buttons">
-<div class="jq-dropdown jq-dropdown-tip" id="tutorial-dropdown-10">
+<div class="jq-dropdown jq-dropdown-tip" id="tutorial-dropdown-12">
 <ul class="jq-dropdown-menu">
 <li><a href="tutorials/17/1_deim/file">Case 1-DEIM</a></li>
 <li><a href="tutorials/17/1_inefficient/file">Case 1-Inefficient</a></li>
 <li><a href="tutorials/17/2_inefficient/file">Case 2-Inefficient</a></li>
 </ul>
 </div>
-<div class="tutorial-button" data-jq-dropdown="#tutorial-dropdown-10"><img src="_static/images/github-logo.png" style="vertical-align: middle; width: 25px"/> View on GitHub</div>
-<div class="jq-dropdown jq-dropdown-tip" id="tutorial-dropdown-11">
+<div class="tutorial-button" data-jq-dropdown="#tutorial-dropdown-12"><img src="_static/images/github-logo.png" style="vertical-align: middle; width: 25px"/> View on GitHub</div>
+<div class="jq-dropdown jq-dropdown-tip" id="tutorial-dropdown-13">
 <ul class="jq-dropdown-menu">
 <li><a href="tutorials/17/1_deim/notebook">Case 1-DEIM</a></li>
-<li><span class="in-progress">Case 1-Inefficient <img src="_static/images/work-in-progress.png" style="vertical-align: middle; width: 25px"/></span></li>
-<li><span class="in-progress">Case 2-Inefficient <img src="_static/images/work-in-progress.png" style="vertical-align: middle; width: 25px"/></span></li>
+<li><a href="tutorials/17/1_inefficient/notebook">Case 1-Inefficient</a></li>
+<li><a href="tutorials/17/2_inefficient/notebook">Case 2-Inefficient</a></li>
 </ul>
 </div>
-<div class="tutorial-button" data-jq-dropdown="#tutorial-dropdown-11"><img src="_static/images/colab-logo.png" style="vertical-align: middle; width: 25px"/> Run on Google Colab</div>
-<div class="jq-dropdown jq-dropdown-tip" id="tutorial-dropdown-12">
+<div class="tutorial-button" data-jq-dropdown="#tutorial-dropdown-13"><img src="_static/images/colab-logo.png" style="vertical-align: middle; width: 25px"/> Run on Google Colab</div>
+<div class="jq-dropdown jq-dropdown-tip" id="tutorial-dropdown-14">
 <ul class="jq-dropdown-menu">
 <li><span class="in-progress">Case 1-DEIM <img src="_static/images/work-in-progress.png" style="vertical-align: middle; width: 25px"/></span></li>
 <li><a href="tutorials/17/1_inefficient/app">Case 1-Inefficient</a></li>
 <li><span class="in-progress">Case 2-Inefficient <img src="_static/images/work-in-progress.png" style="vertical-align: middle; width: 25px"/></span></li>
 </ul>
 </div>
-<div class="tutorial-button" data-jq-dropdown="#tutorial-dropdown-12"><img src="_static/images/argos-logo.png" style="vertical-align: middle; width: 25px"/> Run on ARGOS</div>
+<div class="tutorial-button" data-jq-dropdown="#tutorial-dropdown-14"><img src="_static/images/argos-logo.png" style="vertical-align: middle; width: 25px"/> Run on ARGOS</div>
 </div>
 </div>
 </div>
@@ -631,7 +660,7 @@
 <p>Reduced basis and POD-Galerkin methods for Stokes problems</p>
 </div>
 <div class="tutorial-buttons">
-<div class="jq-dropdown jq-dropdown-tip" id="tutorial-dropdown-13">
+<div class="jq-dropdown jq-dropdown-tip" id="tutorial-dropdown-15">
 <ul class="jq-dropdown-menu">
 <li><a href="tutorials/12/1_rb/file">Case 1-RB</a></li>
 <li><a href="tutorials/12/1_pod/file">Case 1-POD</a></li>
@@ -639,17 +668,17 @@
 <li><a href="tutorials/12/2_pod/file">Case 2-POD</a></li>
 </ul>
 </div>
-<div class="tutorial-button" data-jq-dropdown="#tutorial-dropdown-13"><img src="_static/images/github-logo.png" style="vertical-align: middle; width: 25px"/> View on GitHub</div>
-<div class="jq-dropdown jq-dropdown-tip" id="tutorial-dropdown-14">
+<div class="tutorial-button" data-jq-dropdown="#tutorial-dropdown-15"><img src="_static/images/github-logo.png" style="vertical-align: middle; width: 25px"/> View on GitHub</div>
+<div class="jq-dropdown jq-dropdown-tip" id="tutorial-dropdown-16">
 <ul class="jq-dropdown-menu">
-<li><span class="in-progress">Case 1-RB <img src="_static/images/work-in-progress.png" style="vertical-align: middle; width: 25px"/></span></li>
+<li><a href="tutorials/12/1_rb/notebook">Case 1-RB</a></li>
 <li><a href="tutorials/12/1_pod/notebook">Case 1-POD</a></li>
-<li><span class="in-progress">Case 2-RB <img src="_static/images/work-in-progress.png" style="vertical-align: middle; width: 25px"/></span></li>
-<li><span class="in-progress">Case 2-POD <img src="_static/images/work-in-progress.png" style="vertical-align: middle; width: 25px"/></span></li>
+<li><a href="tutorials/12/2_rb/notebook">Case 2-RB</a></li>
+<li><a href="tutorials/12/2_pod/notebook">Case 2-POD</a></li>
 </ul>
 </div>
-<div class="tutorial-button" data-jq-dropdown="#tutorial-dropdown-14"><img src="_static/images/colab-logo.png" style="vertical-align: middle; width: 25px"/> Run on Google Colab</div>
-<div class="jq-dropdown jq-dropdown-tip" id="tutorial-dropdown-15">
+<div class="tutorial-button" data-jq-dropdown="#tutorial-dropdown-16"><img src="_static/images/colab-logo.png" style="vertical-align: middle; width: 25px"/> Run on Google Colab</div>
+<div class="jq-dropdown jq-dropdown-tip" id="tutorial-dropdown-17">
 <ul class="jq-dropdown-menu">
 <li><span class="in-progress">Case 1-RB <img src="_static/images/work-in-progress.png" style="vertical-align: middle; width: 25px"/></span></li>
 <li><a href="tutorials/12/1_pod/app">Case 1-POD</a></li>
@@ -657,7 +686,7 @@
 <li><span class="in-progress">Case 2-POD <img src="_static/images/work-in-progress.png" style="vertical-align: middle; width: 25px"/></span></li>
 </ul>
 </div>
-<div class="tutorial-button" data-jq-dropdown="#tutorial-dropdown-15"><img src="_static/images/argos-logo.png" style="vertical-align: middle; width: 25px"/> Run on ARGOS</div>
+<div class="tutorial-button" data-jq-dropdown="#tutorial-dropdown-17"><img src="_static/images/argos-logo.png" style="vertical-align: middle; width: 25px"/> Run on ARGOS</div>
 </div>
 </div>
 </div>
@@ -695,14 +724,14 @@
 <p>One-way coupling between a fluid dynamics problem based on Stokes and an elliptic equation (e.g., temperature, concentration)</p>
 </div>
 <div class="tutorial-buttons">
-<div class="jq-dropdown jq-dropdown-tip" id="tutorial-dropdown-16">
+<div class="jq-dropdown jq-dropdown-tip" id="tutorial-dropdown-18">
 <ul class="jq-dropdown-menu">
 <li><a href="tutorials/16/eim/file">EIM</a></li>
 <li><a href="tutorials/16/deim/file">DEIM</a></li>
 <li><a href="tutorials/16/inefficient/file">Inefficient</a></li>
 </ul>
 </div>
-<div class="tutorial-button" data-jq-dropdown="#tutorial-dropdown-16"><img src="_static/images/github-logo.png" style="vertical-align: middle; width: 25px"/> View on GitHub</div>
+<div class="tutorial-button" data-jq-dropdown="#tutorial-dropdown-18"><img src="_static/images/github-logo.png" style="vertical-align: middle; width: 25px"/> View on GitHub</div>
 <div class="tutorial-button tutorial-button-in-progress"><img src="_static/images/work-in-progress.png" style="vertical-align: middle; width: 25px"/> Run on Google Colab</div>
 <div class="tutorial-button tutorial-button-in-progress"><img src="_static/images/work-in-progress.png" style="vertical-align: middle; width: 25px"/> Run on ARGOS</div>
 </div>
@@ -722,30 +751,30 @@
 <p>One-way coupling between a fluid dynamics problem based on Stokes and an elliptic equation (e.g., temperature, concentration)</p>
 </div>
 <div class="tutorial-buttons">
-<div class="jq-dropdown jq-dropdown-tip" id="tutorial-dropdown-17">
+<div class="jq-dropdown jq-dropdown-tip" id="tutorial-dropdown-19">
 <ul class="jq-dropdown-menu">
 <li><a href="tutorials/17/1_deim/file">Case 1-DEIM</a></li>
 <li><a href="tutorials/17/1_inefficient/file">Case 1-Inefficient</a></li>
 <li><a href="tutorials/17/2_inefficient/file">Case 2-Inefficient</a></li>
 </ul>
 </div>
-<div class="tutorial-button" data-jq-dropdown="#tutorial-dropdown-17"><img src="_static/images/github-logo.png" style="vertical-align: middle; width: 25px"/> View on GitHub</div>
-<div class="jq-dropdown jq-dropdown-tip" id="tutorial-dropdown-18">
+<div class="tutorial-button" data-jq-dropdown="#tutorial-dropdown-19"><img src="_static/images/github-logo.png" style="vertical-align: middle; width: 25px"/> View on GitHub</div>
+<div class="jq-dropdown jq-dropdown-tip" id="tutorial-dropdown-20">
 <ul class="jq-dropdown-menu">
 <li><a href="tutorials/17/1_deim/notebook">Case 1-DEIM</a></li>
-<li><span class="in-progress">Case 1-Inefficient <img src="_static/images/work-in-progress.png" style="vertical-align: middle; width: 25px"/></span></li>
-<li><span class="in-progress">Case 2-Inefficient <img src="_static/images/work-in-progress.png" style="vertical-align: middle; width: 25px"/></span></li>
+<li><a href="tutorials/17/1_inefficient/notebook">Case 1-Inefficient</a></li>
+<li><a href="tutorials/17/2_inefficient/notebook">Case 2-Inefficient</a></li>
 </ul>
 </div>
-<div class="tutorial-button" data-jq-dropdown="#tutorial-dropdown-18"><img src="_static/images/colab-logo.png" style="vertical-align: middle; width: 25px"/> Run on Google Colab</div>
-<div class="jq-dropdown jq-dropdown-tip" id="tutorial-dropdown-19">
+<div class="tutorial-button" data-jq-dropdown="#tutorial-dropdown-20"><img src="_static/images/colab-logo.png" style="vertical-align: middle; width: 25px"/> Run on Google Colab</div>
+<div class="jq-dropdown jq-dropdown-tip" id="tutorial-dropdown-21">
 <ul class="jq-dropdown-menu">
 <li><span class="in-progress">Case 1-DEIM <img src="_static/images/work-in-progress.png" style="vertical-align: middle; width: 25px"/></span></li>
 <li><a href="tutorials/17/1_inefficient/app">Case 1-Inefficient</a></li>
 <li><span class="in-progress">Case 2-Inefficient <img src="_static/images/work-in-progress.png" style="vertical-align: middle; width: 25px"/></span></li>
 </ul>
 </div>
-<div class="tutorial-button" data-jq-dropdown="#tutorial-dropdown-19"><img src="_static/images/argos-logo.png" style="vertical-align: middle; width: 25px"/> Run on ARGOS</div>
+<div class="tutorial-button" data-jq-dropdown="#tutorial-dropdown-21"><img src="_static/images/argos-logo.png" style="vertical-align: middle; width: 25px"/> Run on ARGOS</div>
 </div>
 </div>
 </div>
@@ -809,7 +838,7 @@
 <p>Reduced basis and POD-Galerkin methods for optimal control problems governed by elliptic equations</p>
 </div>
 <div class="tutorial-buttons">
-<div class="jq-dropdown jq-dropdown-tip" id="tutorial-dropdown-20">
+<div class="jq-dropdown jq-dropdown-tip" id="tutorial-dropdown-22">
 <ul class="jq-dropdown-menu">
 <li><a href="tutorials/13/1_rb/file">Case 1-RB</a></li>
 <li><a href="tutorials/13/1_pod/file">Case 1-POD</a></li>
@@ -817,17 +846,17 @@
 <li><a href="tutorials/13/2_pod/file">Case 2-POD</a></li>
 </ul>
 </div>
-<div class="tutorial-button" data-jq-dropdown="#tutorial-dropdown-20"><img src="_static/images/github-logo.png" style="vertical-align: middle; width: 25px"/> View on GitHub</div>
-<div class="jq-dropdown jq-dropdown-tip" id="tutorial-dropdown-21">
+<div class="tutorial-button" data-jq-dropdown="#tutorial-dropdown-22"><img src="_static/images/github-logo.png" style="vertical-align: middle; width: 25px"/> View on GitHub</div>
+<div class="jq-dropdown jq-dropdown-tip" id="tutorial-dropdown-23">
 <ul class="jq-dropdown-menu">
-<li><span class="in-progress">Case 1-RB <img src="_static/images/work-in-progress.png" style="vertical-align: middle; width: 25px"/></span></li>
+<li><a href="tutorials/13/1_rb/notebook">Case 1-RB</a></li>
 <li><a href="tutorials/13/1_pod/notebook">Case 1-POD</a></li>
-<li><span class="in-progress">Case 2-RB <img src="_static/images/work-in-progress.png" style="vertical-align: middle; width: 25px"/></span></li>
+<li><a href="tutorials/13/2_rb/notebook">Case 2-RB</a></li>
 <li><a href="tutorials/13/2_pod/notebook">Case 2-POD</a></li>
 </ul>
 </div>
-<div class="tutorial-button" data-jq-dropdown="#tutorial-dropdown-21"><img src="_static/images/colab-logo.png" style="vertical-align: middle; width: 25px"/> Run on Google Colab</div>
-<div class="jq-dropdown jq-dropdown-tip" id="tutorial-dropdown-22">
+<div class="tutorial-button" data-jq-dropdown="#tutorial-dropdown-23"><img src="_static/images/colab-logo.png" style="vertical-align: middle; width: 25px"/> Run on Google Colab</div>
+<div class="jq-dropdown jq-dropdown-tip" id="tutorial-dropdown-24">
 <ul class="jq-dropdown-menu">
 <li><span class="in-progress">Case 1-RB <img src="_static/images/work-in-progress.png" style="vertical-align: middle; width: 25px"/></span></li>
 <li><a href="tutorials/13/1_pod/app">Case 1-POD</a></li>
@@ -835,7 +864,7 @@
 <li><span class="in-progress">Case 2-POD <img src="_static/images/work-in-progress.png" style="vertical-align: middle; width: 25px"/></span></li>
 </ul>
 </div>
-<div class="tutorial-button" data-jq-dropdown="#tutorial-dropdown-22"><img src="_static/images/argos-logo.png" style="vertical-align: middle; width: 25px"/> Run on ARGOS</div>
+<div class="tutorial-button" data-jq-dropdown="#tutorial-dropdown-24"><img src="_static/images/argos-logo.png" style="vertical-align: middle; width: 25px"/> Run on ARGOS</div>
 </div>
 </div>
 </div>
@@ -899,7 +928,7 @@
 <p>Reduced order models for advection dominated problems</p>
 </div>
 <div class="tutorial-buttons">
-<div class="jq-dropdown jq-dropdown-tip" id="tutorial-dropdown-23">
+<div class="jq-dropdown jq-dropdown-tip" id="tutorial-dropdown-25">
 <ul class="jq-dropdown-menu">
 <li><a href="tutorials/09/1_rb/file">Case 1-RB</a></li>
 <li><a href="tutorials/09/1_pod/file">Case 1-POD</a></li>
@@ -911,7 +940,7 @@
 <li><a href="tutorials/09/3_pod/file">Case 3-POD</a></li>
 </ul>
 </div>
-<div class="tutorial-button" data-jq-dropdown="#tutorial-dropdown-23"><img src="_static/images/github-logo.png" style="vertical-align: middle; width: 25px"/> View on GitHub</div>
+<div class="tutorial-button" data-jq-dropdown="#tutorial-dropdown-25"><img src="_static/images/github-logo.png" style="vertical-align: middle; width: 25px"/> View on GitHub</div>
 <div class="tutorial-button tutorial-button-in-progress"><img src="_static/images/work-in-progress.png" style="vertical-align: middle; width: 25px"/> Run on Google Colab</div>
 <div class="tutorial-button tutorial-button-in-progress"><img src="_static/images/work-in-progress.png" style="vertical-align: middle; width: 25px"/> Run on ARGOS</div>
 </div>
@@ -931,13 +960,13 @@
 <p>Weighted reduced order methods for uncertainty quantification problems</p>
 </div>
 <div class="tutorial-buttons">
-<div class="jq-dropdown jq-dropdown-tip" id="tutorial-dropdown-24">
+<div class="jq-dropdown jq-dropdown-tip" id="tutorial-dropdown-26">
 <ul class="jq-dropdown-menu">
 <li><a href="tutorials/10/1_rb/file">Case 1-RB</a></li>
 <li><a href="tutorials/10/1_pod/file">Case 1-POD</a></li>
 </ul>
 </div>
-<div class="tutorial-button" data-jq-dropdown="#tutorial-dropdown-24"><img src="_static/images/github-logo.png" style="vertical-align: middle; width: 25px"/> View on GitHub</div>
+<div class="tutorial-button" data-jq-dropdown="#tutorial-dropdown-26"><img src="_static/images/github-logo.png" style="vertical-align: middle; width: 25px"/> View on GitHub</div>
 <div class="tutorial-button tutorial-button-in-progress"><img src="_static/images/work-in-progress.png" style="vertical-align: middle; width: 25px"/> Run on Google Colab</div>
 <div class="tutorial-button tutorial-button-in-progress"><img src="_static/images/work-in-progress.png" style="vertical-align: middle; width: 25px"/> Run on ARGOS</div>
 </div>
