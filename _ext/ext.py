@@ -68,6 +68,32 @@ class Tutorials(Directive):
 
     def run(self):
         output = list()
+        # General text
+        intro_buttons = "".join([
+            self._button(
+                "file", "https://github.com/RBniCS/RBniCS/tree/master/tutorials",
+                lambda _1, _2: "View all tutorials on GitHub"),
+            self._button(
+                "notebook", "https://youtu.be/AD0sq2wjYKE",
+                lambda _1, _2: "Video on how to run tutorials on Google Colab"),
+            self._button(
+                "app", "https://argos.sissa.it/",
+                lambda _1, _2: "Learn more about ARGOS")
+        ])
+        intro = f"""
+<p>
+<b>RBniCS</b> is accompanied by several tutorials, that can be run on a local installation of the library,
+or interactively in any web browser either
+on <a href="https://colab.research.google.com/">Google Colab</a> or
+on <a href="https://argos.sissa.it/tutorials">ARGOS</a>, the Advanced Reduced Groupware Online Simulation platform,
+without any required installation.
+<div class="tutorial-buttons">
+{intro_buttons}
+</div>
+</p>
+"""
+        output.append(nodes.raw(text=intro, format="html"))
+        # Categories
         for (category_id, (category, tutorials_in_category)) in enumerate(categories.items()):
             output.append(nodes.raw(text=self._category_title(category_id, category), format="html"))
             cards = list()
@@ -162,7 +188,7 @@ class Tutorials(Directive):
             dropdown += f"""
         </ul>
     </div>
-    <div class="tutorial-button" data-jq-dropdown="#tutorial-dropdown-{cls._dropdown_id}">{cls._type_text(type_, all_links)}</div>
+    <div class="tutorial-button" data-jq-dropdown="#tutorial-dropdown-{cls._dropdown_id}">{cls._type_image(type_, all_links)} {cls._type_text(type_, all_links)}</div>
 """
             cls._dropdown_id += 1
             return dropdown
@@ -172,14 +198,16 @@ class Tutorials(Directive):
     _dropdown_id = 1
 
     @classmethod
-    def _button(cls, type_, link):
+    def _button(cls, type_, link, text=None):
+        if text is None:
+            text = cls._type_text
         if link != "":
             return f"""
-    <a href="{link}"><div class="tutorial-button">{cls._type_text(type_, link)}</div></a>
+    <a href="{link}"><div class="tutorial-button">{cls._type_image(type_, link)} {text(type_, link)}</div></a>
 """
         else:
             return f"""
-    <div class="tutorial-button tutorial-button-in-progress">{cls._type_text(type_, link)}</div>
+    <div class="tutorial-button tutorial-button-in-progress">{cls._type_image(type_, link)} {text(type_, link)}</div>
 """
 
     @classmethod
@@ -192,7 +220,7 @@ class Tutorials(Directive):
             text = "Run on ARGOS"
         else:
             raise RuntimeError("Invalid type")
-        return f'{cls._type_image(type_, link)} {text}'
+        return f'{text}'
 
     @staticmethod
     def _type_image(type_, link):

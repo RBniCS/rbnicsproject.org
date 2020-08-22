@@ -4,7 +4,7 @@ tutorials = {
         "description": "Reduced basis method for (scalar) elliptic problems",
         "cases": {
             "-": {
-                "file": "https://github.com/RBniCS/RBniCS/blob/jupyter/tutorials/01_thermal_block/tutorial_thermal_block.ipynb",
+                "file": "https://github.com/RBniCS/RBniCS/blob/master/tutorials/01_thermal_block/tutorial_thermal_block.ipynb",
                 "notebook": "https://colab.research.google.com/drive/1YSugKATXS68J62bsi0eoil-KpjfocKoH",
                 "app": "https://argos.sissa.it/tutorials/thermal_block",
             }
@@ -15,7 +15,7 @@ tutorials = {
         "description": "POD-Galerkin method for (vector) elliptic problems",
         "cases": {
             "-": {
-                "file": "https://github.com/RBniCS/RBniCS/blob/jupyter/tutorials/02_elastic_block/tutorial_elastic_block.ipynb",
+                "file": "https://github.com/RBniCS/RBniCS/blob/master/tutorials/02_elastic_block/tutorial_elastic_block.ipynb",
                 "notebook": "https://colab.research.google.com/drive/1jXAYbSi-6PkhxLKv_GdZ2JS99RHdeHbq",
                 "app": "https://argos.sissa.it/tutorials/elastic_block",
             }
@@ -26,7 +26,7 @@ tutorials = {
         "description": "Automatic pull back of problems with affine geometric parametrization",
         "cases": {
             "-": {
-                "file": "https://github.com/RBniCS/RBniCS/blob/jupyter/tutorials/03_hole/tutorial_hole.ipynb",
+                "file": "https://github.com/RBniCS/RBniCS/blob/master/tutorials/03_hole/tutorial_hole.ipynb",
                 "notebook": "https://colab.research.google.com/drive/1aDaxo8o_ceDkCOGrJQfTip__ao9tTIgB",
                 "app": "https://argos.sissa.it/tutorials/hole",
             }
@@ -38,14 +38,14 @@ tutorials = {
         "cases": {
             "1": {
                 "description": "Case 1: with parameter-independent boundary conditions",
-                "file": "https://github.com/RBniCS/RBniCS/blob/jupyter/tutorials/04_graetz/tutorial_graetz_1.ipynb",
+                "file": "https://github.com/RBniCS/RBniCS/blob/master/tutorials/04_graetz/tutorial_graetz_1.ipynb",
                 "notebook": "https://colab.research.google.com/drive/1awX5VNrwxhkmmyEgrgu5gn_jhxYzUL7l",
                 "app": "https://argos.sissa.it/tutorials/graetz",
             },
             "2": {
                 "description": "Case 2: with parametrized boundary conditions",
-                "file": "https://github.com/RBniCS/RBniCS/blob/jupyter/tutorials/04_graetz/tutorial_graetz_2.ipynb",
-                "notebook": "",
+                "file": "https://github.com/RBniCS/RBniCS/blob/master/tutorials/04_graetz/tutorial_graetz_2.ipynb",
+                "notebook": "https://colab.research.google.com/drive/1087QXDfx-E-Lih6KoPRkrD8hwIY1uFSO",
                 "app": "",
             }
         },
@@ -56,61 +56,61 @@ tutorials = {
         "cases": {
             "eim": {
                 "description": "EIM",
-                "file": "https://github.com/RBniCS/RBniCS/blob/jupyter/tutorials/05_gaussian/tutorial_gaussian_eim.ipynb",
+                "file": "https://github.com/RBniCS/RBniCS/blob/master/tutorials/05_gaussian/tutorial_gaussian_eim.ipynb",
                 "notebook": "https://colab.research.google.com/drive/1vX2IGpHE1nvpNVX4glFLM1ohoFjS9Ysv",
                 "app": "https://argos.sissa.it/tutorials/gaussian",
             },
             "deim": {
                 "description": "DEIM",
-                "file": "https://github.com/RBniCS/RBniCS/blob/jupyter/tutorials/05_gaussian/tutorial_gaussian_deim.ipynb",
-                "notebook": "",
+                "file": "https://github.com/RBniCS/RBniCS/blob/master/tutorials/05_gaussian/tutorial_gaussian_deim.ipynb",
+                "notebook": "https://colab.research.google.com/drive/1yXmBPDk1x9cJAqNPOFdxB0zGAMZbOp_x",
                 "app": "",
             },
             "inefficient": {
                 "description": "Inefficient",
-                "file": "https://github.com/RBniCS/RBniCS/blob/jupyter/tutorials/05_gaussian/tutorial_gaussian_exact.ipynb",
-                "notebook": "",
+                "file": "https://github.com/RBniCS/RBniCS/blob/master/tutorials/05_gaussian/tutorial_gaussian_exact.ipynb",
+                "notebook": "https://colab.research.google.com/drive/12ztpRN18IPMrxwNP7UvzvDEG-O1FSOjh",
                 "app": "",
             },
         },
     },
     "06": {
         "title": "Unsteady thermal block problem",
-        "description": "Reduced basis method for (scalar) elliptic problems",
+        "description": "Reduced basis and POD-Galerkin methods for (scalar) parabolic problems",
         "cases": {
             "1_rb": {
                 "description": "Case 1-RB: homogeneous boundary and initial conditions, reduction with reduced basis method",
-                "file": "https://github.com/RBniCS/RBniCS/blob/jupyter/tutorials/06_thermal_block_unsteady/tutorial_thermal_block_unsteady_1_rb.ipynb",
-                "notebook": "",
+                "file": "https://github.com/RBniCS/RBniCS/blob/master/tutorials/06_thermal_block_unsteady/tutorial_thermal_block_unsteady_1_rb.ipynb",
+                "notebook": "https://colab.research.google.com/drive/1K3xDnRf4_9Pqjed1TkmPH7dtYhdgwKSg",
                 "app": "",
             },
             "1_pod": {
                 "description": "Case 1-POD: homogeneous boundary and initial conditions, reduction with POD-Galerkin method",
-                "file": "https://github.com/RBniCS/RBniCS/blob/jupyter/tutorials/06_thermal_block_unsteady/tutorial_thermal_block_unsteady_1_pod.ipynb",
-                "notebook": "",
+                "file": "https://github.com/RBniCS/RBniCS/blob/master/tutorials/06_thermal_block_unsteady/tutorial_thermal_block_unsteady_1_pod.ipynb",
+                "notebook": "https://colab.research.google.com/drive/1RVa7dEXdLqOPJjAbPsWH27GMsUZIWhYp",
                 "app": "",
             },
             "2_rb": {
                 "description": "Case 2-RB: homogeneous boundary conditions, non-homogeneous initial conditions, reduction with reduced basis method",
-                "file": "https://github.com/RBniCS/RBniCS/blob/jupyter/tutorials/06_thermal_block_unsteady/tutorial_thermal_block_unsteady_2_rb.py",
+                "file": "https://github.com/RBniCS/RBniCS/blob/master/tutorials/06_thermal_block_unsteady/tutorial_thermal_block_unsteady_2_rb.py",
                 "notebook": "",
                 "app": "",
             },
             "2_pod": {
                 "description": "Case 2-POD: homogeneous boundary conditions, non-homogeneous initial conditions, reduction with POD-Galerkin method",
-                "file": "https://github.com/RBniCS/RBniCS/blob/jupyter/tutorials/06_thermal_block_unsteady/tutorial_thermal_block_unsteady_2_pod.py",
+                "file": "https://github.com/RBniCS/RBniCS/blob/master/tutorials/06_thermal_block_unsteady/tutorial_thermal_block_unsteady_2_pod.py",
                 "notebook": "",
                 "app": "",
             },
             "3_rb": {
                 "description": "Case 3-RB: non-homogeneous boundary and initial conditions, reduction with reduced basis method",
-                "file": "https://github.com/RBniCS/RBniCS/blob/jupyter/tutorials/06_thermal_block_unsteady/tutorial_thermal_block_unsteady_3_rb.py",
+                "file": "https://github.com/RBniCS/RBniCS/blob/master/tutorials/06_thermal_block_unsteady/tutorial_thermal_block_unsteady_3_rb.py",
                 "notebook": "",
                 "app": "",
             },
             "3_pod": {
                 "description": "Case 3-POD: non-homogeneous boundary and initial conditions, reduction with POD-Galerkin method",
-                "file": "https://github.com/RBniCS/RBniCS/blob/jupyter/tutorials/06_thermal_block_unsteady/tutorial_thermal_block_unsteady_3_pod.py",
+                "file": "https://github.com/RBniCS/RBniCS/blob/master/tutorials/06_thermal_block_unsteady/tutorial_thermal_block_unsteady_3_pod.py",
                 "notebook": "",
                 "app": "",
             },
@@ -122,20 +122,20 @@ tutorials = {
         "cases": {
             "eim": {
                 "description": "EIM",
-                "file": "https://github.com/RBniCS/RBniCS/blob/jupyter/tutorials/07_nonlinear_elliptic/tutorial_nonlinear_elliptic_eim.ipynb",
-                "notebook": "",
+                "file": "https://github.com/RBniCS/RBniCS/blob/master/tutorials/07_nonlinear_elliptic/tutorial_nonlinear_elliptic_eim.ipynb",
+                "notebook": "https://colab.research.google.com/drive/1sj1Gw1yOOEK-onJ1AVfP3JUI9KTsObhL",
                 "app": "",
             },
             "deim": {
                 "description": "DEIM",
-                "file": "https://github.com/RBniCS/RBniCS/blob/jupyter/tutorials/07_nonlinear_elliptic/tutorial_nonlinear_elliptic_deim.ipynb",
-                "notebook": "",
+                "file": "https://github.com/RBniCS/RBniCS/blob/master/tutorials/07_nonlinear_elliptic/tutorial_nonlinear_elliptic_deim.ipynb",
+                "notebook": "https://colab.research.google.com/drive/1PzZabpyf4M9wBzQ4s9XiXpJg-Bg9HA6t",
                 "app": "",
             },
             "inefficient": {
                 "description": "Inefficient",
-                "file": "https://github.com/RBniCS/RBniCS/blob/jupyter/tutorials/07_nonlinear_elliptic/tutorial_nonlinear_elliptic_exact.ipynb",
-                "notebook": "",
+                "file": "https://github.com/RBniCS/RBniCS/blob/master/tutorials/07_nonlinear_elliptic/tutorial_nonlinear_elliptic_exact.ipynb",
+                "notebook": "https://colab.research.google.com/drive/15_nqEDuZau7lxIlrd9aV1duSEeDLvZWt",
                 "app": "",
             },
         },
@@ -145,8 +145,8 @@ tutorials = {
         "description": "Empirical interpolation methods for nonlinear parabolic problems",
         "cases": {
             "-": {
-                "file": "https://github.com/RBniCS/RBniCS/blob/jupyter/tutorials/08_nonlinear_parabolic/tutorial_nonlinear_parabolic_exact.ipynb",
-                "notebook": "",
+                "file": "https://github.com/RBniCS/RBniCS/blob/master/tutorials/08_nonlinear_parabolic/tutorial_nonlinear_parabolic_exact.ipynb",
+                "notebook": "https://colab.research.google.com/drive/1UiA0ztQuz-g3c-6hHdc3SoUiX2jObFhr",
                 "app": "",
             }
         },
@@ -240,26 +240,26 @@ tutorials = {
         "cases": {
             "1_rb": {
                 "description": "Case 1-RB",
-                "file": "https://github.com/RBniCS/RBniCS/blob/jupyter/tutorials/12_stokes/tutorial_stokes_1_rb.ipynb",
-                "notebook": "",
+                "file": "https://github.com/RBniCS/RBniCS/blob/master/tutorials/12_stokes/tutorial_stokes_1_rb.ipynb",
+                "notebook": "https://colab.research.google.com/drive/18HLWdiwEClHo9Sk-VyQ9LtqvzoCF5AFh",
                 "app": "",
             },
             "1_pod": {
                 "description": "Case 1-POD",
-                "file": "https://github.com/RBniCS/RBniCS/blob/jupyter/tutorials/12_stokes/tutorial_stokes_1_pod.ipynb",
-                "notebook": "https://colab.research.google.com/drive/1m7L8BNWZkF0Z9jCfVI714LnQ37D3U3e5",
+                "file": "https://github.com/RBniCS/RBniCS/blob/master/tutorials/12_stokes/tutorial_stokes_1_pod.ipynb",
+                "notebook": "https://colab.research.google.com/drive/1NmnsAOMCJuuUBSXzHpLJUUJqROhLUWr2",
                 "app": "https://argos.sissa.it/tutorials/stokes",
             },
             "2_rb": {
                 "description": "Case 2-RB",
-                "file": "https://github.com/RBniCS/RBniCS/blob/jupyter/tutorials/12_stokes/tutorial_stokes_2_rb.ipynb",
-                "notebook": "",
+                "file": "https://github.com/RBniCS/RBniCS/blob/master/tutorials/12_stokes/tutorial_stokes_2_rb.ipynb",
+                "notebook": "https://colab.research.google.com/drive/1N2zS5aGabDmdFjqs8ZOODZ79KsKL-UiK",
                 "app": "",
             },
             "2_pod": {
                 "description": "Case 2-POD",
-                "file": "https://github.com/RBniCS/RBniCS/blob/jupyter/tutorials/12_stokes/tutorial_stokes_2_pod.ipynb",
-                "notebook": "",
+                "file": "https://github.com/RBniCS/RBniCS/blob/master/tutorials/12_stokes/tutorial_stokes_2_pod.ipynb",
+                "notebook": "https://colab.research.google.com/drive/1nMjYXFafUmUgLlhrbQaDSjN5EIrBrak3",
                 "app": "",
             },
         },
@@ -270,25 +270,25 @@ tutorials = {
         "cases": {
             "1_rb": {
                 "description": "Case 1-RB",
-                "file": "https://github.com/RBniCS/RBniCS/blob/jupyter/tutorials/13_elliptic_optimal_control/tutorial_elliptic_optimal_control_1_rb.ipynb",
-                "notebook": "",
+                "file": "https://github.com/RBniCS/RBniCS/blob/master/tutorials/13_elliptic_optimal_control/tutorial_elliptic_optimal_control_1_rb.ipynb",
+                "notebook": "https://colab.research.google.com/drive/1zvivBhYJp-J63O-0rOYIOhzKCZzrplfr",
                 "app": "",
             },
             "1_pod": {
                 "description": "Case 1-POD",
-                "file": "https://github.com/RBniCS/RBniCS/blob/jupyter/tutorials/13_elliptic_optimal_control/tutorial_elliptic_optimal_control_1_pod.ipynb",
+                "file": "https://github.com/RBniCS/RBniCS/blob/master/tutorials/13_elliptic_optimal_control/tutorial_elliptic_optimal_control_1_pod.ipynb",
                 "notebook": "https://colab.research.google.com/drive/1pQwhIr9HrQqeH1PKisYO2k1OTgT7kjE3",
                 "app": "https://argos.sissa.it/tutorials/elliptic_optimal_control",
             },
             "2_rb": {
                 "description": "Case 2-RB",
-                "file": "https://github.com/RBniCS/RBniCS/blob/jupyter/tutorials/13_elliptic_optimal_control/tutorial_elliptic_optimal_control_2_rb.ipynb",
-                "notebook": "",
+                "file": "https://github.com/RBniCS/RBniCS/blob/master/tutorials/13_elliptic_optimal_control/tutorial_elliptic_optimal_control_2_rb.ipynb",
+                "notebook": "https://colab.research.google.com/drive/16r6dKzfDd4Lyw1edXnA2bCiKlm-kV8Lg",
                 "app": "",
             },
             "2_pod": {
                 "description": "Case 2-POD",
-                "file": "https://github.com/RBniCS/RBniCS/blob/jupyter/tutorials/13_elliptic_optimal_control/tutorial_elliptic_optimal_control_2_pod.ipynb",
+                "file": "https://github.com/RBniCS/RBniCS/blob/master/tutorials/13_elliptic_optimal_control/tutorial_elliptic_optimal_control_2_pod.ipynb",
                 "notebook": "https://colab.research.google.com/drive/1zfhjrHTDlE_ASwtAwecobFO-mXSNYXCO",
                 "app": "",
             },
@@ -299,7 +299,7 @@ tutorials = {
         "description": "Reduced basis and POD-Galerkin methods for optimal control problems governed by Stokes equations",
         "cases": {
             "-": {
-                "file": "https://github.com/RBniCS/RBniCS/blob/jupyter/tutorials/14_stokes_optimal_control/tutorial_stokes_optimal_control_1.ipynb",
+                "file": "https://github.com/RBniCS/RBniCS/blob/master/tutorials/14_stokes_optimal_control/tutorial_stokes_optimal_control_1.ipynb",
                 "notebook": "https://colab.research.google.com/drive/1DwpRXTIJjXkNzJ-ASphXSlE2E7MYp_cJ",
                 "app": "https://argos.sissa.it/tutorials/stokes_optimal_control",
             }
@@ -346,20 +346,20 @@ tutorials = {
         "cases": {
             "1_deim": {
                 "description": "Case 1-DEIM",
-                "file": "https://github.com/RBniCS/RBniCS/blob/jupyter/tutorials/17_navier_stokes/tutorial_navier_stokes_deim_1.ipynb",
-                "notebook": "https://colab.research.google.com/drive/1AVrmgfSOSIdCyttN8wkbwOSDuqMVE0SI",
+                "file": "https://github.com/RBniCS/RBniCS/blob/master/tutorials/17_navier_stokes/tutorial_navier_stokes_1_deim.ipynb",
+                "notebook": "https://colab.research.google.com/drive/1gvT6RUEXCEBdRxGcws5l6wEsQbE2hNK7",
                 "app": "",
             },
             "1_inefficient": {
                 "description": "Case 1-Inefficient",
-                "file": "https://github.com/RBniCS/RBniCS/blob/jupyter/tutorials/17_navier_stokes/tutorial_navier_stokes_exact_1.ipynb",
-                "notebook": "",
+                "file": "https://github.com/RBniCS/RBniCS/blob/master/tutorials/17_navier_stokes/tutorial_navier_stokes_1_exact.ipynb",
+                "notebook": "https://colab.research.google.com/drive/1UJeXlVUxdXK7kKodb99GpjzT7R6R6I0K",
                 "app": "https://argos.sissa.it/tutorials/navier_stokes",
             },
             "2_inefficient": {
                 "description": "Case 2-Inefficient",
-                "file": "https://github.com/RBniCS/RBniCS/blob/jupyter/tutorials/17_navier_stokes/tutorial_navier_stokes_exact_2.ipynb",
-                "notebook": "",
+                "file": "https://github.com/RBniCS/RBniCS/blob/master/tutorials/17_navier_stokes/tutorial_navier_stokes_2_exact.ipynb",
+                "notebook": "https://colab.research.google.com/drive/1D4U4ikv3UV4rsjwXAcGE3ZS5ktTY4Gsl",
                 "app": "",
             },
         },
