@@ -74,7 +74,7 @@ class Tutorials(Directive):
                 "file", "https://github.com/RBniCS/RBniCS/tree/master/tutorials",
                 lambda _1, _2: "View all tutorials on GitHub"),
             self._button(
-                "notebook", "https://youtu.be/AD0sq2wjYKE",
+                "notebook", "https://youtu.be/AD0sq2wjYKE?t=49",
                 lambda _1, _2: "Video on how to run tutorials on Google Colab"),
             self._button(
                 "app", "https://argos.sissa.it/",
