@@ -84,8 +84,8 @@ class Tutorials(Directive):
 <p>
 <b>RBniCS</b> is accompanied by several tutorials, that can be run on a local installation of the library,
 or interactively in any web browser either
-on <a href="https://colab.research.google.com/">Google Colab</a> or
-on <a href="https://argos.sissa.it/tutorials">ARGOS</a>, the Advanced Reduced Groupware Online Simulation platform,
+on <a href="https://colab.research.google.com/" target="_blank">Google Colab</a> or
+on <a href="https://argos.sissa.it/tutorials" target="_blank">ARGOS</a>, the Advanced Reduced Groupware Online Simulation platform,
 without any required installation.
 <div class="tutorial-buttons">
 {intro_buttons}
@@ -179,7 +179,7 @@ without any required installation.
             for (text, link) in entries.items():
                 if link != "":
                     dropdown += f"""
-            <li><a href="{link}">{text}</a></li>
+            <li><a href="{link}" target="_blank">{text}</a></li>
 """
                 else:
                     dropdown += f"""
@@ -203,7 +203,7 @@ without any required installation.
             text = cls._type_text
         if link != "":
             return f"""
-    <a href="{link}"><div class="tutorial-button">{cls._type_image(type_, link)} {text(type_, link)}</div></a>
+    <a href="{link}" target="_blank"><div class="tutorial-button">{cls._type_image(type_, link)} {text(type_, link)}</div></a>
 """
         else:
             return f"""
