@@ -1,5 +1,9 @@
 How to cite
 ===========
+.. meta::
+    :description lang=en:
+        If you use RBniCS in your work, please cite [Hesthaven, Rozza, Stamm; 2015] and the RBniCS website
+
 If you use **RBniCS** in your work, please use the following citations to reference **RBniCS**
 
 .. code-block:: bibtex

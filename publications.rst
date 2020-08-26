@@ -1,5 +1,9 @@
 Publications
 ============
+.. meta::
+    :description lang=en:
+        We provide a list of publications that use RBniCS. Contact us by email to have your publication
+        added to the list.
 
 Below we provide a list of publications that use **RBniCS**.
 

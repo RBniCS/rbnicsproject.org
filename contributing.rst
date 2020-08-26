@@ -1,5 +1,10 @@
 How to contribute
 =================
+.. meta::
+    :description lang=en:
+        RBniCS developement takes place on GitHub. Contributions and proposal of new features are welcome.
+        Feel free to contact us by email for further information.
+
 .. image:: _static/images/github-logo.png
     :target: https://github.com/RBniCS/RBniCS
     :height: 80px
