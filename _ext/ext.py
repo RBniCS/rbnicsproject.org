@@ -261,6 +261,29 @@ def on_build_finished(app, exc):
             + 'id="__toc_disabled"'
             + "/g' {} +",
             shell=True)
+        # Add further SEO tags
+        seo_json = """
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "RBniCS - reduced order modelling in FEniCS",
+  "description": "The RBniCS Project contains an implementation in FEniCS of several reduced order modelling techniques for parametrized problems. RBniCS is currently developed at SISSA mathLab by Dr. Francesco Ballarin.",
+  "keywords": "RBniCS, FEniCS, reduced order modelling, model order reduction, reduced basis",
+  "softwareHelp": "https://www.rbnicsproject.org/",
+  "operatingSystem": "Linux",
+  "applicationCategory": "Simulation",
+  "inLanguage": "en",
+  "license": "https://opensource.org/licenses/lgpl-3.0",
+  "url": "https://github.com/RBniCS/RBniCS"
+}
+</script>"""
+        index = os.path.join(app.outdir, "index.html")
+        with open(index, "r") as f:
+            index_content = f.read()
+        index_content = index_content.replace("<head>", "<head>\n" + seo_json)
+        with open(index, "w") as f:
+            f.write(index_content)
         # Write out local pages
         for (key, content, _) in local_pages.items():
             html_path = os.path.join(app.outdir, local_pages.url(*key), "index.html")
