@@ -1,5 +1,10 @@
 RBniCS Project
 ==============
+.. meta::
+    :description lang=en:
+        The RBniCS Project contains an implementation in FEniCS of several reduced order modelling techniques
+        for parametrized problems. RBniCS is currently developed at SISSA mathLab by Dr. Francesco Ballarin.
+
 .. image:: _static/images/github-logo.png
     :target: https://github.com/RBniCS/RBniCS
     :height: 80px

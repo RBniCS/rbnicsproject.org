@@ -1,5 +1,10 @@
 Installation
 ============
+.. meta::
+    :description lang=en:
+        RBniCS requires FEniCS, numpy and scipy. Additional requirements are automatically handled during the setup.
+        You can run RBniCS online on Google Colab and ARGOS. A docker image is available on DockerHub.
+
 Prerequisites
 -------------
 
