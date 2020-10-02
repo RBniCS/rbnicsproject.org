@@ -342,7 +342,7 @@ tutorials = {
     },
     "17": {
         "title": "Navier-Stokes problems",
-        "description": "One-way coupling between a fluid dynamics problem based on Stokes and an elliptic equation (e.g., temperature, concentration)",
+        "description": "Discrete Empirical Interpolation Method for steady Navier-Stokes problems",
         "cases": {
             "1_deim": {
                 "description": "Case 1-DEIM",
