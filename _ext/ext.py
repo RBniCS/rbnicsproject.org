@@ -3,6 +3,7 @@ import subprocess
 from docutils import nodes
 from docutils.parsers.rst import Directive
 from tutorials import categories, tutorials
+import sphinx_material
 
 class LocalPages(object):
     def __init__(self):
@@ -298,6 +299,16 @@ def on_build_finished(app, exc):
             os.makedirs(os.path.dirname(html_path), exist_ok=True)
             with open(html_path, "w") as html_file:
                 html_file.write(content)
+
+create_sitemap_bak = sphinx_material.create_sitemap
+def create_sitemap(app, exc):
+    create_sitemap_bak(app, exc)
+    if exc is None and app.builder.format == "html":
+        # Remove trailing index.html from sitemap.xml
+        subprocess.run(
+            "sed -i 's|/index.html||g' " + os.path.join(app.outdir, "sitemap.xml"),
+            shell=True)
+sphinx_material.create_sitemap = create_sitemap
 
 
 def setup(app):
