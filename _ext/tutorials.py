@@ -163,8 +163,8 @@ tutorials = {
             },
             "1_pod": {
                 "description": "Case 1-POD",
-                "file": "https://github.com/RBniCS/RBniCS/blob/master/tutorials/09_advection_dominated/tutorial_advection_dominated_1_pod.py",
-                "notebook": "",
+                "file": "https://github.com/RBniCS/RBniCS/blob/master/tutorials/09_advection_dominated/tutorial_advection_dominated_1_pod.ipynb",
+                "notebook": "https://colab.research.google.com/drive/1IfP-aj7qN9Qab4OEW6Rm4LhTuULwz0Pc",
                 "app": "",
             },
             "1_rb_rectification": {
