@@ -10,10 +10,10 @@ class LocalPages(object):
         self._content = dict()
         self._broken = dict()
 
-    def add(self, num, case, type_, link):
-        if (num, case, type_) not in self._content:
+    def add(self, slug, case, type_, link):
+        if (slug, case, type_) not in self._content:
             if link != "":
-                self._content[(num, case, type_)] = f"""
+                self._content[(slug, case, type_)] = f"""
     <!DOCTYPE HTML>
     <html lang="en">
         <head>
@@ -28,9 +28,9 @@ class LocalPages(object):
         </body>
     </html>
     """
-                self._broken[(num, case, type_)] = False
+                self._broken[(slug, case, type_)] = False
             else:
-                self._content[(num, case, type_)] = f"""
+                self._content[(slug, case, type_)] = f"""
     <!DOCTYPE HTML>
     <html lang="en">
         <head>
@@ -45,10 +45,10 @@ class LocalPages(object):
         </body>
     </html>
     """
-                self._broken[(num, case, type_)] = True
+                self._broken[(slug, case, type_)] = True
                 return ""
         if link != "":
-            return self.url(num, case, type_)
+            return self.url(slug, case, type_)
         else:
             return ""
 
@@ -57,11 +57,11 @@ class LocalPages(object):
             yield (key, self._content[key], self._broken[key])
 
     @staticmethod
-    def url(num, case, type_):
+    def url(slug, case, type_):
         if case == "-":
-            return os.path.join("tutorials", num, type_)
+            return os.path.join("tutorials", slug, type_)
         else:
-            return os.path.join("tutorials", num, case, type_)
+            return os.path.join("tutorials", slug, case, type_)
 
 local_pages = LocalPages()
 
@@ -100,14 +100,15 @@ without any required installation.
             cards = list()
             for num in tutorials_in_category:
                 data = tutorials[num]
+                slug = data["slug"]
                 cases = data["cases"]
                 if len(cases) == 1:
                     assert "-" in cases
-                    links = {type_: local_pages.add(num, "-", type_, cases["-"][type_])
+                    links = {type_: local_pages.add(slug, "-", type_, cases["-"][type_])
                              for type_ in self._types}
                     buttons = "".join([self._button(type_, links[type_]) for type_ in self._types])
                 else:
-                    links = {case: {type_: local_pages.add(num, case, type_, cases[case][type_])
+                    links = {case: {type_: local_pages.add(slug, case, type_, cases[case][type_])
                                     for type_ in self._types}
                              for case in cases}
                     buttons = "".join(
