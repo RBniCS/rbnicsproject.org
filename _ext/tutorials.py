@@ -2,6 +2,7 @@ tutorials = {
     "01": {
         "title": "Thermal block problem",
         "description": "Reduced basis method for (scalar) elliptic problems",
+        "slug": "thermal_block",
         "cases": {
             "-": {
                 "file": "https://github.com/RBniCS/RBniCS/blob/master/tutorials/01_thermal_block/tutorial_thermal_block.ipynb",
@@ -13,6 +14,7 @@ tutorials = {
     "02": {
         "title": "Elastic block problem",
         "description": "POD-Galerkin method for (vector) elliptic problems",
+        "slug": "elastic_block",
         "cases": {
             "-": {
                 "file": "https://github.com/RBniCS/RBniCS/blob/master/tutorials/02_elastic_block/tutorial_elastic_block.ipynb",
@@ -24,6 +26,7 @@ tutorials = {
     "03": {
         "title": "Geometrical parametrization of a hole",
         "description": "Automatic pull back of problems with affine geometric parametrization",
+        "slug": "hole",
         "cases": {
             "-": {
                 "file": "https://github.com/RBniCS/RBniCS/blob/master/tutorials/03_hole/tutorial_hole.ipynb",
@@ -35,6 +38,7 @@ tutorials = {
     "04": {
         "title": "Graetz problem",
         "description": "Stability factor estimation by the successive constraint method. Sample problem with non-homogeneous boundary conditions.",
+        "slug": "graetz",
         "cases": {
             "1": {
                 "description": "Case 1: with parameter-independent boundary conditions",
@@ -53,6 +57,7 @@ tutorials = {
     "05": {
         "title": "Empirical Interpolation Methods for non-affine elliptic problems",
         "description": "Reduced basis method for non-affine problems by Empirical Interpolation Method, Discrete Empirical Interpolation Method and Inefficient Online Projection",
+        "slug": "gaussian",
         "cases": {
             "eim": {
                 "description": "EIM",
@@ -77,6 +82,7 @@ tutorials = {
     "06": {
         "title": "Unsteady thermal block problem",
         "description": "Reduced basis and POD-Galerkin methods for (scalar) parabolic problems",
+        "slug": "thermal_block_unsteady",
         "cases": {
             "1_rb": {
                 "description": "Case 1-RB: homogeneous boundary and initial conditions, reduction with reduced basis method",
@@ -119,6 +125,7 @@ tutorials = {
     "07": {
         "title": "Nonlinear elliptic problem",
         "description": "Empirical interpolation methods for nonlinear elliptic problems",
+        "slug": "nonlinear_elliptic",
         "cases": {
             "eim": {
                 "description": "EIM",
@@ -143,6 +150,7 @@ tutorials = {
     "08": {
         "title": "Nonlinear parabolic problem",
         "description": "Empirical interpolation methods for nonlinear parabolic problems",
+        "slug": "nonlinear_parabolic",
         "cases": {
             "-": {
                 "file": "https://github.com/RBniCS/RBniCS/blob/master/tutorials/08_nonlinear_parabolic/tutorial_nonlinear_parabolic_exact.ipynb",
@@ -154,6 +162,7 @@ tutorials = {
     "09": {
         "title": "Advection dominated problems",
         "description": "Reduced order models for advection dominated problems",
+        "slug": "advection_dominated",
         "cases": {
             "1_rb": {
                 "description": "Case 1-RB",
@@ -208,6 +217,7 @@ tutorials = {
     "10": {
         "title": "Uncertainty quantification problems",
         "description": "Weighted reduced order methods for uncertainty quantification problems",
+        "slug": "weighted_uq",
         "cases": {
             "1_rb": {
                 "description": "Case 1-RB",
@@ -226,6 +236,7 @@ tutorials = {
     "11": {
         "title": "Quasi geostrophic equations",
         "description": "POD-Galerkin methods for quasi geostrophic equations, as an example on how to customize and extend RBniCS beyond the set of problems provided in the core of the library",
+        "slug": "quasi_geostrophic",
         "cases": {
             "-": {
                 "file": "https://github.com/RBniCS/RBniCS/blob/master/tutorials/11_quasi_geostrophic/tutorial_quasi_geostrophic.py",
@@ -237,6 +248,7 @@ tutorials = {
     "12": {
         "title": "Stokes problems",
         "description": "Reduced basis and POD-Galerkin methods for Stokes problems",
+        "slug": "stokes",
         "cases": {
             "1_rb": {
                 "description": "Case 1-RB",
@@ -267,6 +279,7 @@ tutorials = {
     "13": {
         "title": "Elliptic optimal control problems",
         "description": "Reduced basis and POD-Galerkin methods for optimal control problems governed by elliptic equations",
+        "slug": "elliptic_optimal_control",
         "cases": {
             "1_rb": {
                 "description": "Case 1-RB",
@@ -297,6 +310,7 @@ tutorials = {
     "14": {
         "title": "Stokes optimal control problems",
         "description": "Reduced basis and POD-Galerkin methods for optimal control problems governed by Stokes equations",
+        "slug": "stokes_optimal_control",
         "cases": {
             "-": {
                 "file": "https://github.com/RBniCS/RBniCS/blob/master/tutorials/14_stokes_optimal_control/tutorial_stokes_optimal_control_1.ipynb",
@@ -308,6 +322,7 @@ tutorials = {
     "15": {
         "title": "Optimal control problems governed by the quasi geostrophic equations",
         "description": "POD-Galerkin methods for optimal control problems governed by quasi geostrophic equations",
+        "slug": "quasi_geostrophic_optimal_control",
         "cases": {
             "-": {
                 "file": "https://github.com/RBniCS/RBniCS/blob/master/tutorials/15_quasi_geostrophic_optimal_control/tutorial_quasi_geostrophic_optimal_control.py",
@@ -319,6 +334,7 @@ tutorials = {
     "16": {
         "title": "Coupled problems",
         "description": "One-way coupling between a fluid dynamics problem based on Stokes and an elliptic equation (e.g., temperature, concentration)",
+        "slug": "stokes_coupled",
         "cases": {
             "eim": {
                 "description": "EIM",
@@ -343,6 +359,7 @@ tutorials = {
     "17": {
         "title": "Navier-Stokes problems",
         "description": "Discrete Empirical Interpolation Method for steady Navier-Stokes problems",
+        "slug": "navier_stokes",
         "cases": {
             "1_deim": {
                 "description": "Case 1-DEIM",
@@ -367,6 +384,7 @@ tutorials = {
     "18": {
         "title": "Unsteady Stokes problem",
         "description": "POD-Galerkin methods for unsteady Stokes problems",
+        "slug": "stokes_unsteady",
         "cases": {
             "-": {
                 "file": "https://github.com/RBniCS/RBniCS/blob/master/tutorials/18_stokes_unsteady/tutorial_stokes_unsteady_1.py",
@@ -378,6 +396,7 @@ tutorials = {
     "19": {
         "title": "Unsteady Navier-Stokes problem",
         "description": "POD-Galerkin methods for unsteady Navier-Stokes problems",
+        "slug": "navier_stokes_unsteady",
         "cases": {
             "-": {
                 "file": "https://github.com/RBniCS/RBniCS/blob/master/tutorials/19_navier_stokes_unsteady/tutorial_navier_stokes_unsteady_exact_1.py",
@@ -391,6 +410,7 @@ tutorials = {
     "": {
         "title": "",
         "description": "",
+        "slug": "",
         "cases": {
             "-": {
                 "description": "", # only required for tutorials with more than one case
