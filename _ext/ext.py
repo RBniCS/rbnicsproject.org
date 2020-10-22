@@ -20,6 +20,7 @@ class LocalPages(object):
             <meta charset="utf-8">
             <meta http-equiv="refresh" content="0;url={link}" />
             <link rel="canonical" href="{link}" />
+            <meta name="robots" content="noindex">
         </head>
         <body>
             <p>
@@ -35,8 +36,7 @@ class LocalPages(object):
     <html lang="en">
         <head>
             <meta charset="utf-8">
-            <meta http-equiv="refresh" content="0;url={link}" />
-            <link rel="canonical" href="{link}" />
+            <meta name="robots" content="noindex">
         </head>
         <body>
             <p>
