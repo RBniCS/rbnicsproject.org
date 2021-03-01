@@ -13,7 +13,7 @@ jobs:
     - name: Generate sphinx website
       uses: ammaraskar/sphinx-action@master
       with:
-        pre-build-command: "pip3 -q install sphinx-material sphinxcontrib-bibtex"
+        pre-build-command: "pip3 -q install sphinx-material sphinxcontrib-bibtex<2.0.0"
         docs-folder: .
     - name: Fix permissions and add CNAME file
       run: |

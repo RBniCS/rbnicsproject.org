@@ -18,7 +18,7 @@ author = "Francesco Ballarin (and contributors)"
 
 # Add any Sphinx extension module names here.
 extensions = [
-    "sphinxcontrib.bibtex<2.0.0",
+    "sphinxcontrib.bibtex",
     "ext"
 ]
 
