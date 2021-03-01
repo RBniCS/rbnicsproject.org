@@ -3,7 +3,8 @@ RBniCS Project
 .. meta::
     :description lang=en:
         The RBniCS Project contains an implementation in FEniCS of several reduced order modelling techniques
-        for parametrized problems. RBniCS is currently developed at SISSA mathLab by Dr. Francesco Ballarin.
+        for parametrized problems. RBniCS is currently developed at Catholic University of the Sacred Heart by
+        Dr. Francesco Ballarin in collaboration with Prof. Gianluigi Rozza's group at SISSA mathLab.
 
 .. image:: _static/images/github-logo.png
     :target: https://github.com/RBniCS/RBniCS
@@ -37,8 +38,8 @@ Several tutorials are provided. This software is also a companion of the introdu
 Authors and contributors
 ------------------------
 
-**RBniCS** is currently developed and maintained at `SISSA mathLab <http://mathlab.sissa.it/>`__ by `Dr. Francesco Ballarin <https://www.francescoballarin.it>`__, under the supervision of `Prof. Gianluigi Rozza <https://people.sissa.it/~grozza/>`__ in the framework of the `AROMA-CFD ERC CoG project <https://people.sissa.it/~grozza/aroma-cfd/>`__.
-We acknowledge all contributors listed in the `AUTHORS file <https://github.com/RBniCS/RBniCS/blob/master/AUTHORS>`__.
+**RBniCS** is currently developed and maintained at the `Catholic University of the Sacred Heart <https://www.unicatt.it/>`__ by `Dr. Francesco Ballarin <https://www.francescoballarin.it>`__ in collaboration with `Prof. Gianluigi Rozza <https://people.sissa.it/~grozza/>`__'s group at `SISSA mathLab <http://mathlab.sissa.it/>`__. The financial support of the `AROMA-CFD ERC CoG project <https://people.sissa.it/~grozza/aroma-cfd/>`__ is gratefully acknowledged.
+We further acknowledge all contributors listed in the `AUTHORS file <https://github.com/RBniCS/RBniCS/blob/master/AUTHORS>`__.
 
 Learn more about RBniCS
 -----------------------
