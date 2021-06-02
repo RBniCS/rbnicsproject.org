@@ -18,13 +18,15 @@ class LocalPages(object):
     <html lang="en">
         <head>
             <meta charset="utf-8">
-            <meta http-equiv="refresh" content="0;url={link}" />
-            <link rel="canonical" href="{link}" />
+            <meta http-equiv="refresh" content="0;url={self._prefix_link(type_, link)}" />
+            <link rel="canonical" href="{self._prefix_link(type_, link)}" />
             <meta name="robots" content="noindex">
         </head>
         <body>
             <p>
-                You are being redirected to <a href="{link}">{link}</a>
+                You are being redirected to <a href="{self._prefix_link(type_, link)}">
+                    {self._prefix_link(type_, link)}
+                </a>
             </p>
         </body>
     </html>
@@ -51,6 +53,18 @@ class LocalPages(object):
             return self.url(slug, case, type_)
         else:
             return ""
+
+    @staticmethod
+    def _prefix_link(type_, link):
+        if type_ == "file":
+            link = "https://github.com/RBniCS/RBniCS/blob/master/" + link
+        elif type_ == "notebook":
+            link = "https://colab.research.google.com/github/RBniCS/RBniCS/blob/open-in-colab/" + link
+        elif type_ == "app":
+            link = "https://argos.sissa.it/" + link
+        else:
+            raise RuntimeError("Invalid type")
+        return f"{link}"
 
     def items(self):
         for key in self._content.keys():
@@ -102,6 +116,11 @@ without any required installation.
                 data = tutorials[num]
                 slug = data["slug"]
                 cases = data["cases"]
+                for case in cases:
+                    if cases[case]["file"].endswith(".ipynb"):
+                        cases[case]["notebook"] = cases[case]["file"]
+                    else:
+                        cases[case]["notebook"] = ""
                 if len(cases) == 1:
                     assert "-" in cases
                     links = {type_: local_pages.add(slug, "-", type_, cases["-"][type_])
@@ -222,7 +241,7 @@ without any required installation.
             text = "Run on ARGOS"
         else:
             raise RuntimeError("Invalid type")
-        return f'{text}'
+        return f"{text}"
 
     @staticmethod
     def _type_image(type_, link):
