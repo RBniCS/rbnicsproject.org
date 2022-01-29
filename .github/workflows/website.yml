@@ -5,6 +5,8 @@ on:
     branches:
       - "**"
       - "!gh-pages"
+      - "!open-in-colab-rbnics"
+      - "!open-in-colab-rbnicsx"
 
 jobs:
   website:
