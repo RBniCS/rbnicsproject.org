@@ -30,6 +30,9 @@ templates_path = ["_templates"]
 # This pattern also affects html_static_path and html_extra_path.
 exclude_patterns = ["_build", "Thumbs.db", ".DS_Store"]
 
+# List of bib files
+bibtex_bibfiles = ["_static/bib/publications.bib"]
+
 
 # -- Options for HTML output -------------------------------------------------
 html_title = "RBniCS - reduced order modelling in FEniCS"
