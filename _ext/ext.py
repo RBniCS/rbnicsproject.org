@@ -289,7 +289,7 @@ def on_build_finished(app, exc):
   "@context": "http://schema.org",
   "@type": "SoftwareApplication",
   "name": "RBniCS - reduced order modelling in FEniCS",
-  "description": "The RBniCS Project contains an implementation in FEniCS of several reduced order modelling techniques for parametrized problems. RBniCS is currently developed at Catholic University of the Sacred Heart by Dr. Francesco Ballarin in collaboration with Prof. Gianluigi Rozza's group at SISSA mathLab.",
+  "description": "The RBniCS Project contains an implementation in FEniCS of several reduced order modelling techniques for parametrized problems. RBniCS is currently developed at Università Cattolica del Sacro Cuore by Dr. Francesco Ballarin in collaboration with Prof. Gianluigi Rozza's group at SISSA mathLab.",
   "keywords": "RBniCS, FEniCS, reduced order modelling, model order reduction, reduced basis",
   "softwareHelp": "https://www.rbnicsproject.org/",
   "operatingSystem": "Linux",
@@ -301,7 +301,7 @@ def on_build_finished(app, exc):
 </script>
 
 <meta property="og:title" content="RBniCS - reduced order modelling in FEniCS" />
-<meta property="og:description" content="The RBniCS Project contains an implementation in FEniCS of several reduced order modelling techniques for parametrized problems. RBniCS is currently developed at Catholic University of the Sacred Heart by Dr. Francesco Ballarin in collaboration with Prof. Gianluigi Rozza's group at SISSA mathLab." />
+<meta property="og:description" content="The RBniCS Project contains an implementation in FEniCS of several reduced order modelling techniques for parametrized problems. RBniCS is currently developed at Università Cattolica del Sacro Cuore by Dr. Francesco Ballarin in collaboration with Prof. Gianluigi Rozza's group at SISSA mathLab." />
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="RBniCS" />
 <meta property="og:url" content="https://www.rbnicsproject.org/" />

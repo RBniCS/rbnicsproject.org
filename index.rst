@@ -3,7 +3,7 @@ RBniCS Project
 .. meta::
     :description lang=en:
         The RBniCS Project contains an implementation in FEniCS of several reduced order modelling techniques
-        for parametrized problems. RBniCS is currently developed at Catholic University of the Sacred Heart by
+        for parametrized problems. RBniCS is currently developed at Università Cattolica del Sacro Cuore by
         Dr. Francesco Ballarin in collaboration with Prof. Gianluigi Rozza's group at SISSA mathLab.
 
 .. image:: _static/images/github-logo.png
@@ -38,7 +38,7 @@ Several tutorials are provided. This software is also a companion of the introdu
 Authors and contributors
 ------------------------
 
-**RBniCS** is currently developed and maintained at the `Catholic University of the Sacred Heart <https://www.unicatt.it/>`__ by `Dr. Francesco Ballarin <https://www.francescoballarin.it>`__ in collaboration with `Prof. Gianluigi Rozza <https://people.sissa.it/~grozza/>`__'s group at `SISSA mathLab <http://mathlab.sissa.it/>`__.
+**RBniCS** is currently developed and maintained at `Università Cattolica del Sacro Cuore <https://www.unicatt.it/>`__ by `Dr. Francesco Ballarin <https://www.francescoballarin.it>`__ in collaboration with `Prof. Gianluigi Rozza <https://people.sissa.it/~grozza/>`__'s group at `SISSA mathLab <http://mathlab.sissa.it/>`__.
 We acknowledge all contributors listed in the `AUTHORS file <https://github.com/RBniCS/RBniCS/blob/master/AUTHORS>`__.
 
 Timeline and funding
@@ -53,7 +53,7 @@ Timeline and funding
    * - 2020-2022
      - Financial support of the `NA-from-PDEs PRIN MIUR project  <https://people.sissa.it/~grozza/na-from-pdes/>`__ (PI: `Prof. Gianluigi Rozza <https://people.sissa.it/~grozza/>`__, unit: `SISSA mathLab <http://mathlab.sissa.it/>`__) for the continuation of **RBniCS** development.
    * - 2021
-     - The `Catholic University of the Sacred Heart <https://www.unicatt.it/>`__ joins the development. `SISSA mathLab <http://mathlab.sissa.it/>`__ and the `Catholic University of the Sacred Heart <https://www.unicatt.it/>`__ are now partner institutions in the development of **RBniCS**.
+     - `Università Cattolica del Sacro Cuore <https://www.unicatt.it/>`__ joins the development. `SISSA mathLab <http://mathlab.sissa.it/>`__ and the `Università Cattolica del Sacro Cuore <https://www.unicatt.it/>`__ are now partner institutions in the development of **RBniCS**.
 
 
 Learn more about RBniCS
