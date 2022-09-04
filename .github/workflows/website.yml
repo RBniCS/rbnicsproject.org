@@ -23,7 +23,7 @@ jobs:
         sudo chown $USER _build -R
         echo "www.rbnicsproject.org" > _build/html/CNAME
     - name: Deploy to GitHub pages
-      if: github.repository == 'RBniCS/rbnicsproject.org' && github.ref == 'refs/heads/master'
+      if: github.repository == 'RBniCS/rbnicsproject.org' && github.ref == 'refs/heads/main'
       uses: peaceiris/actions-gh-pages@v3
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
@@ -31,7 +31,7 @@ jobs:
         user_name: 'GitHub Actions'
         user_email: '41898282+github-actions[bot]@users.noreply.github.com'
     - name: Deploy to GitHub artifacts
-      if: github.repository == 'RBniCS/rbnicsproject.org' && github.ref != 'refs/heads/master'
+      if: github.repository == 'RBniCS/rbnicsproject.org' && github.ref != 'refs/heads/main'
       uses: actions/upload-artifact@v2
       with:
         name: website
