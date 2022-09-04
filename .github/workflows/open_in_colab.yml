@@ -25,9 +25,15 @@ jobs:
         NO_TESTS_COLLECTED=5
         python3 -m pytest --ipynb-action=create-notebooks --tag-collapse --work-dir=.ipynb_colab tutorials || (($?==$NO_TESTS_COLLECTED))
         find tutorials -type d -name .ipynb_colab -exec rsync -avz --remove-source-files --include="*.ipynb" --exclude="*" {}/ {}/.. \;
+        mv tutorials/.imports.ipynb tutorials/imports.ipynb
+        TUTORIAL_PREFIXES=($(find tutorials -type f -name "*.ipynb" -and -not -ipath "*[*" -exec basename {} ".ipynb" \;))
+        for TUTORIAL_PREFIX in "${TUTORIAL_PREFIXES[@]}"; do
+          TUTORIALS_WITH_PREFIX=($(find tutorials -type f -name "${TUTORIAL_PREFIX}*.ipynb"))
+          if [ "${#TUTORIALS_WITH_PREFIX[@]}" -gt "1" ]; then
+            rm tutorials/${TUTORIAL_PREFIX}.ipynb
+          fi
+        done
         rsync -avz --delete --include "*/" --include="*.ipynb" --exclude="*" tutorials ../open_in_colab/
-        cd ..
-        mv open_in_colab/tutorials/.imports.ipynb open_in_colab/tutorials/imports.ipynb
       fem_on_colab_packages: |
         fenicsx==real@current$dolfinx
         gmsh@current
