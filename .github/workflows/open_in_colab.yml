@@ -12,6 +12,10 @@ on:
   schedule:
     - cron: "0 3 * * SUN"
   workflow_dispatch:
+    inputs:
+      branch:
+        description: "Branch on RBniCSx repository"
+        type: string
 
 jobs:
   open_in_colab:
@@ -23,6 +27,9 @@ jobs:
         python3 -m pip install --no-dependencies git+https://github.com/multiphenics/nbvalx.git
         git clone https://github.com/RBniCS/RBniCSx.git
         cd RBniCSx
+        if [ -n "${{ (inputs || github.event.inputs).branch }}" ]; then
+          git checkout "${{ (inputs || github.event.inputs).branch }}"
+        fi
         NO_TESTS_COLLECTED=5
         python3 -m pytest --ipynb-action=create-notebooks --tag-collapse --work-dir=.ipynb_colab tutorials || (($?==$NO_TESTS_COLLECTED))
         find tutorials -type d -name .ipynb_colab -exec rsync -avz --remove-source-files --include="*.ipynb" --exclude="*" {}/ {}/.. \;
