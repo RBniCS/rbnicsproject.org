@@ -57,6 +57,44 @@ jobs:
       publish_on: github@RBniCS/rbnicsproject.org@open-in-colab-rbnicsx
       publish_if_repository: RBniCS/rbnicsproject.org
 
+  open_in_kaggle:
+    uses: fem-on-kaggle/open-in-kaggle-workflow/.github/workflows/workflow_call.yml@main
+    with:
+      work_directory: open_in_kaggle
+      notebook_pattern: "**/*.ipynb"
+      notebook_preparation: |
+        python3 -m pip install --no-dependencies git+https://github.com/multiphenics/nbvalx.git
+        git clone https://github.com/RBniCS/RBniCSx.git
+        cd RBniCSx
+        if [ -n "${{ (inputs || github.event.inputs).branch }}" ]; then
+          git checkout "${{ (inputs || github.event.inputs).branch }}"
+        fi
+        NO_TESTS_COLLECTED=5
+        python3 -m pytest --ipynb-action=create-notebooks --tag-collapse --work-dir=.ipynb_kaggle tutorials || (($?==$NO_TESTS_COLLECTED))
+        find tutorials -type d -name .ipynb_kaggle -exec rsync -avz --remove-source-files --include="*.ipynb" --exclude="*" {}/ {}/.. \;
+        mv tutorials/.imports.ipynb tutorials/imports.ipynb
+        TUTORIAL_PREFIXES=($(find tutorials -type f -name "*.ipynb" -and -not -ipath "*[*" -exec basename {} ".ipynb" \;))
+        for TUTORIAL_PREFIX in "${TUTORIAL_PREFIXES[@]}"; do
+          TUTORIALS_WITH_PREFIX=($(find tutorials -type f -name "${TUTORIAL_PREFIX}*.ipynb"))
+          if [ "${#TUTORIALS_WITH_PREFIX[@]}" -gt "1" ]; then
+            rm tutorials/${TUTORIAL_PREFIX}.ipynb
+          fi
+        done
+        rsync -avz --delete --include "*/" --include="*.ipynb" --exclude="*" tutorials ../open_in_kaggle/
+      fem_on_kaggle_packages: |
+        gmsh@current
+        fenicsx==real@current$dolfinx
+      pip_packages: |
+        multiphenicsx@https://github.com/multiphenics/multiphenicsx.git@current%rbnicsx
+        ufl4rom@https://github.com/RBniCS/ufl4rom.git@current%rbnicsx
+        rbnicsx@https://github.com/RBniCS/RBniCSx.git@current
+      test_script: |
+        python3 -m pip install kaleido plotly
+        python3 -m pytest --nbval --durations=0 --durations-min=1.0 open_in_kaggle/tutorials/imports.ipynb
+        python3 -m pytest --nbval --durations=0 --durations-min=1.0 open_in_kaggle/tutorials
+      publish_on: github@RBniCS/rbnicsproject.org@open-in-kaggle-rbnicsx
+      publish_if_repository: RBniCS/rbnicsproject.org
+
   warn:
     runs-on: ubuntu-latest
     if: github.repository == 'RBniCS/rbnicsproject.org' && github.ref == 'refs/heads/main' && github.event_name == 'schedule'
