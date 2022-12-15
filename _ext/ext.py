@@ -116,6 +116,7 @@ without any required installation.
                 data = tutorials[num]
                 slug = data["slug"]
                 cases = data["cases"]
+                main_case = data["main_case"]
                 for case in cases:
                     if cases[case]["file"].endswith(".ipynb"):
                         cases[case]["notebook"] = cases[case]["file"]
@@ -133,6 +134,8 @@ without any required installation.
                     buttons = "".join(
                         [self._dropdown(type_, {cases[case]["description"]: links[case][type_] for case in cases})
                          for type_ in self._types])
+                    for type_ in self._types:
+                        local_pages.add(slug, "-", type_, cases[main_case][type_])
                 card_num = self._card(
                     num=num,
                     title=data["title"],

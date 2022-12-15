@@ -9,6 +9,7 @@ tutorials = {
                 "app": "tutorials/thermal_block",
             }
         },
+        "main_case": "-",
     },
     "02": {
         "title": "Elastic block problem",
@@ -20,6 +21,7 @@ tutorials = {
                 "app": "tutorials/elastic_block",
             }
         },
+        "main_case": "-",
     },
     "03": {
         "title": "Geometrical parametrization of a hole",
@@ -31,6 +33,7 @@ tutorials = {
                 "app": "tutorials/hole",
             }
         },
+        "main_case": "-",
     },
     "04": {
         "title": "Graetz problem",
@@ -48,6 +51,7 @@ tutorials = {
                 "app": "",
             }
         },
+        "main_case": "1",
     },
     "05": {
         "title": "Empirical Interpolation Methods for non-affine elliptic problems",
@@ -70,6 +74,7 @@ tutorials = {
                 "app": "",
             },
         },
+        "main_case": "eim",
     },
     "06": {
         "title": "Unsteady thermal block problem",
@@ -107,6 +112,7 @@ tutorials = {
                 "app": "",
             },
         },
+        "main_case": "1_pod",
     },
     "07": {
         "title": "Nonlinear elliptic problem",
@@ -129,6 +135,7 @@ tutorials = {
                 "app": "",
             },
         },
+        "main_case": "eim",
     },
     "08": {
         "title": "Nonlinear parabolic problem",
@@ -140,6 +147,7 @@ tutorials = {
                 "app": "",
             }
         },
+        "main_case": "-",
     },
     "09": {
         "title": "Advection dominated problems",
@@ -187,6 +195,7 @@ tutorials = {
                 "app": "",
             },
         },
+        "main_case": "1_pod",
     },
     "10": {
         "title": "Uncertainty quantification problems",
@@ -204,6 +213,7 @@ tutorials = {
                 "app": "",
             },
          },
+        "main_case": "1_pod",
     },
     "11": {
         "title": "Quasi geostrophic equations",
@@ -215,6 +225,7 @@ tutorials = {
                 "app": "",
             }
         },
+        "main_case": "-",
     },
     "12": {
         "title": "Stokes problems",
@@ -242,6 +253,7 @@ tutorials = {
                 "app": "",
             },
         },
+        "main_case": "1_pod",
     },
     "13": {
         "title": "Elliptic optimal control problems",
@@ -269,6 +281,7 @@ tutorials = {
                 "app": "",
             },
         },
+        "main_case": "1_pod",
     },
     "14": {
         "title": "Stokes optimal control problems",
@@ -280,6 +293,7 @@ tutorials = {
                 "app": "tutorials/stokes_optimal_control",
             }
         },
+        "main_case": "-",
     },
     "15": {
         "title": "Optimal control problems governed by the quasi geostrophic equations",
@@ -291,6 +305,7 @@ tutorials = {
                 "app": "",
             }
         },
+        "main_case": "-",
     },
     "16": {
         "title": "Coupled problems",
@@ -313,6 +328,7 @@ tutorials = {
                 "app": "",
             },
         },
+        "main_case": "eim",
     },
     "17": {
         "title": "Navier-Stokes problems",
@@ -335,6 +351,7 @@ tutorials = {
                 "app": "",
             },
         },
+        "main_case": "1_deim",
     },
     "18": {
         "title": "Unsteady Stokes problem",
@@ -346,6 +363,7 @@ tutorials = {
                 "app": "",
             }
         },
+        "main_case": "-",
     },
     "19": {
         "title": "Unsteady Navier-Stokes problem",
@@ -357,6 +375,7 @@ tutorials = {
                 "app": "",
             }
         },
+        "main_case": "-",
     },
 }
 """
@@ -371,6 +390,7 @@ tutorials = {
                 "app": "",
             }
         },
+        "main_case": "",
     },
 """
 
