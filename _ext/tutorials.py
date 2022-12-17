@@ -377,6 +377,54 @@ tutorials = {
         },
         "main_case": "-",
     },
+    "20": {
+        "title": "Coanda Effect",
+        "description": "POD-Galerkin methods for bifurcation problems",
+        "slug": "coanda_effect",
+        "cases": {
+            "-": {
+                "file": "tutorials/20_coanda_effect/tutorial_coanda_effect.ipynb",
+                "app": "",
+            }
+        },
+        "main_case": "-",
+    },
+    "21": {
+        "title": "Thermal subfin problem",
+        "description": "Steady-state heat transfer problem through a fin",
+        "slug": "thermal_subfin",
+        "cases": {
+            "-": {
+                "file": "tutorials/21_thermal_subfin/tutorial_thermal_subfin.ipynb",
+                "app": "",
+            }
+        },
+        "main_case": "-",
+    },
+    "22": {
+        "title": "Elastic contact problem",
+        "description": "Idealized contact problem in linear elasticity with friction",
+        "slug": "idealized_contact",
+        "cases": {
+            "-": {
+                "file": "tutorials/22_elastic_contact/tutorial_elastic_contact.ipynb",
+                "app": "",
+            }
+        },
+        "main_case": "-",
+    },
+    "23": {
+        "title": "Beam bridge problem",
+        "description": "Geometrical parametrization applied to the physical phenomena of linear deformation of a bridge.",
+        "slug": "bridge",
+        "cases": {
+            "-": {
+                "file": "tutorials/23_beam_bridge/tutorial_beam_bridge.ipynb",
+                "app": "",
+            }
+        },
+        "main_case": "-",
+    },
 }
 """
     "": {
@@ -396,8 +444,9 @@ tutorials = {
 
 categories = {
     "Introductory tutorials": ["01", "02", "03", "04", "05", "06"],
-    "Nonlinear problems": ["07", "08", "16", "17", "19"],
+    "Nonlinear problems": ["07", "08", "16", "17", "19", "20"],
     "Computational fluid dynamics": ["12", "14", "16", "17", "18", "19"],
+    "Computational mechanics": ["02", "21", "22", "23"],
     "Optimal control problems": ["13", "14", "15"],
     "Extending RBniCS": ["09", "10", "11", "15"],
 }
