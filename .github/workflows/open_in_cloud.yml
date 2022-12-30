@@ -51,7 +51,6 @@ jobs:
         ufl4rom@https://github.com/RBniCS/ufl4rom.git@current%rbnicsx
         rbnicsx@https://github.com/RBniCS/RBniCSx.git@current
       test_script: |
-        python3 -m pip install kaleido plotly
         python3 -m pytest --nbval --durations=0 --durations-min=1.0 open_in_colab/tutorials/imports.ipynb
         python3 -m pytest --nbval --durations=0 --durations-min=1.0 open_in_colab/tutorials
       publish_on: github@RBniCS/rbnicsproject.org@open-in-colab-rbnicsx
@@ -89,7 +88,6 @@ jobs:
         ufl4rom@https://github.com/RBniCS/ufl4rom.git@current%rbnicsx
         rbnicsx@https://github.com/RBniCS/RBniCSx.git@current
       test_script: |
-        python3 -m pip install kaleido plotly
         python3 -m pytest --nbval --durations=0 --durations-min=1.0 open_in_kaggle/tutorials/imports.ipynb
         python3 -m pytest --nbval --durations=0 --durations-min=1.0 open_in_kaggle/tutorials
       publish_on: github@RBniCS/rbnicsproject.org@open-in-kaggle-rbnicsx
