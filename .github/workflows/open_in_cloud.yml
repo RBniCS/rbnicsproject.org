@@ -49,6 +49,7 @@ jobs:
       pip_packages: |
         multiphenicsx@https://github.com/multiphenics/multiphenicsx.git@current%rbnicsx
         ufl4rom@https://github.com/RBniCS/ufl4rom.git@current%rbnicsx
+        viskex@https://github.com/viskex/viskex.git@current%rbnicsx
         rbnicsx@https://github.com/RBniCS/RBniCSx.git@current
       test_script: |
         python3 -m pytest --nbval --durations=0 --durations-min=1.0 open_in_colab/tutorials/imports.ipynb
@@ -86,6 +87,7 @@ jobs:
       pip_packages: |
         multiphenicsx@https://github.com/multiphenics/multiphenicsx.git@current%rbnicsx
         ufl4rom@https://github.com/RBniCS/ufl4rom.git@current%rbnicsx
+        viskex@https://github.com/viskex/viskex.git@current%rbnicsx
         rbnicsx@https://github.com/RBniCS/RBniCSx.git@current
       test_script: |
         python3 -m pytest --nbval --durations=0 --durations-min=1.0 open_in_kaggle/tutorials/imports.ipynb
