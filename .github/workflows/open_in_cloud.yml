@@ -25,6 +25,7 @@ jobs:
       work_directory: open_in_colab
       notebook_pattern: "**/*.ipynb"
       notebook_preparation: |
+        apt install -y -qq libgl1-mesa-glx xvfb
         python3 -m pip install --no-dependencies git+https://github.com/multiphenics/nbvalx.git
         git clone https://github.com/RBniCS/RBniCSx.git
         cd RBniCSx
@@ -52,6 +53,8 @@ jobs:
         viskex@https://github.com/viskex/viskex.git@current%rbnicsx
         rbnicsx@https://github.com/RBniCS/RBniCSx.git@current
       test_script: |
+        export DISPLAY=":99"
+        Xvfb $DISPLAY -screen 0 1024x768x24 > /dev/null 2>&1 &
         python3 -m pytest --nbval --durations=0 --durations-min=1.0 open_in_colab/tutorials/imports.ipynb
         python3 -m pytest --nbval --durations=0 --durations-min=1.0 open_in_colab/tutorials
       publish_on: github@RBniCS/rbnicsproject.org@open-in-colab-rbnicsx
@@ -63,6 +66,7 @@ jobs:
       work_directory: open_in_kaggle
       notebook_pattern: "**/*.ipynb"
       notebook_preparation: |
+        apt install -y -qq libgl1-mesa-glx xvfb
         python3 -m pip install --no-dependencies git+https://github.com/multiphenics/nbvalx.git
         git clone https://github.com/RBniCS/RBniCSx.git
         cd RBniCSx
@@ -90,6 +94,8 @@ jobs:
         viskex@https://github.com/viskex/viskex.git@current%rbnicsx
         rbnicsx@https://github.com/RBniCS/RBniCSx.git@current
       test_script: |
+        export DISPLAY=":99"
+        Xvfb $DISPLAY -screen 0 1024x768x24 > /dev/null 2>&1 &
         python3 -m pytest --nbval --durations=0 --durations-min=1.0 open_in_kaggle/tutorials/imports.ipynb
         python3 -m pytest --nbval --durations=0 --durations-min=1.0 open_in_kaggle/tutorials
       publish_on: github@RBniCS/rbnicsproject.org@open-in-kaggle-rbnicsx
