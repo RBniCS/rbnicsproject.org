@@ -47,7 +47,7 @@ html_theme_options = {
     "nav_title": "RBniCS Project",
 
     # Set you GA account ID to enable tracking
-    "google_analytics_account": "UA-66224794-4",
+    "google_analytics_account": "G-FXY0XC79MD",
 
     # Specify a base_url used to generate sitemap.xml. If not
     # specified, then no sitemap will be built.
