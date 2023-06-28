@@ -11,7 +11,7 @@ How to contribute
     :width: 80px
     :alt: Go to repository on GitHub
 .. image:: _static/images/email.png
-    :target: mailto:info@rbnicsproject.org
+    :target: mailto:francesco.ballarin@unicatt.it
     :height: 80px
     :width: 80px
     :alt: Contact us via email
@@ -20,4 +20,4 @@ How to contribute
 | Contributions improving either the code or the documentation, as well as proposal of new features, are welcome as `pull requests <https://github.com/RBniCS/RBniCS/pulls>`__. We particularly welcome contributions in the form of new tutorials: please see this `gist <https://gist.github.com/francesco-ballarin/379ba630499559fa1072b2c526e57706>`__ in order to correctly setup your jupyter environment.
 | Bug reports and upcoming feature proposals can be reported to `our issue tracker <https://github.com/RBniCS/RBniCS/issues>`__.
 
-Feel free to contact us by `email <mailto:info@rbnicsproject.org>`__ for further information or questions about **RBniCS**.
+Feel free to contact us by `email <mailto:francesco.ballarin@unicatt.it>`__ for further information or questions about **RBniCS**.
