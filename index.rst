@@ -12,7 +12,7 @@ RBniCS Project
     :width: 80px
     :alt: Go to repository on GitHub
 .. image:: _static/images/email.png
-    :target: mailto:info@rbnicsproject.org
+    :target: mailto:francesco.ballarin@unicatt.it
     :height: 80px
     :width: 80px
     :alt: Contact us via email
