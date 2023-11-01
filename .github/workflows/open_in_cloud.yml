@@ -47,10 +47,10 @@ jobs:
         gmsh@current
         fenicsx==real@current$dolfinx
       pip_packages: |
-        multiphenicsx@https://github.com/multiphenics/multiphenicsx.git@current%rbnicsx
+        multiphenicsx@https://github.com/multiphenics/multiphenicsx.git@current%rbnicsx£--check-build-dependencies --no-build-isolation
         ufl4rom@https://github.com/RBniCS/ufl4rom.git@current%rbnicsx
         viskex@https://github.com/viskex/viskex.git@current%rbnicsx
-        rbnicsx@https://github.com/RBniCS/RBniCSx.git@current
+        rbnicsx@https://github.com/RBniCS/RBniCSx.git@current£--check-build-dependencies --no-build-isolation
       test_script: |
         apt install -y -qq libgl1-mesa-glx xvfb
         export DISPLAY=":99"
@@ -88,10 +88,10 @@ jobs:
         gmsh@current
         fenicsx==real@current$dolfinx
       pip_packages: |
-        multiphenicsx@https://github.com/multiphenics/multiphenicsx.git@current%rbnicsx
+        multiphenicsx@https://github.com/multiphenics/multiphenicsx.git@current%rbnicsx£--check-build-dependencies --no-build-isolation --config-settings=cmake.define.CMAKE_PREFIX_PATH=${INSTALL_PREFIX}€apt update -y -q && apt install -y -qq software-properties-common wget && wget -O - https://apt.kitware.com/keys/kitware-archive-latest.asc 2>/dev/null | gpg --dearmor - | tee /etc/apt/trusted.gpg.d/kitware.gpg >/dev/null && apt-add-repository -y "deb https://apt.kitware.com/ubuntu/ focal main" && apt install --upgrade -y cmake
         ufl4rom@https://github.com/RBniCS/ufl4rom.git@current%rbnicsx
         viskex@https://github.com/viskex/viskex.git@current%rbnicsx
-        rbnicsx@https://github.com/RBniCS/RBniCSx.git@current
+        rbnicsx@https://github.com/RBniCS/RBniCSx.git@current£--check-build-dependencies --no-build-isolation€export PETSC_DIR=${INSTALL_PREFIX}
       test_script: |
         apt install -y -qq libgl1-mesa-glx xvfb
         export DISPLAY=":99"
