@@ -34,7 +34,6 @@ jobs:
         NO_TESTS_COLLECTED=5
         python3 -m pytest --ipynb-action=create-notebooks --tag-collapse --work-dir=.ipynb_colab tutorials || (($?==$NO_TESTS_COLLECTED))
         find tutorials -type d -name .ipynb_colab -exec rsync -avz --remove-source-files --include="*.ipynb" --exclude="*" {}/ {}/.. \;
-        mv tutorials/.imports.ipynb tutorials/imports.ipynb
         TUTORIAL_PREFIXES=($(find tutorials -type f -name "*.ipynb" -and -not -ipath "*[*" -exec basename {} ".ipynb" \;))
         for TUTORIAL_PREFIX in "${TUTORIAL_PREFIXES[@]}"; do
           TUTORIALS_WITH_PREFIX=($(find tutorials -type f -name "${TUTORIAL_PREFIX}*.ipynb"))
@@ -55,8 +54,7 @@ jobs:
         apt install -y -qq libgl1-mesa-glx xvfb
         export DISPLAY=":99"
         Xvfb $DISPLAY -screen 0 1024x768x24 > /dev/null 2>&1 &
-        python3 -m pytest --nbval --durations=0 --durations-min=1.0 open_in_colab/tutorials/imports.ipynb
-        python3 -m pytest --nbval --durations=0 --durations-min=1.0 open_in_colab/tutorials
+        python3 -m pytest --nbval open_in_colab/tutorials
       publish_on: github@RBniCS/rbnicsproject.org@open-in-colab-rbnicsx
       publish_if_repository: RBniCS/rbnicsproject.org
 
@@ -75,7 +73,6 @@ jobs:
         NO_TESTS_COLLECTED=5
         python3 -m pytest --ipynb-action=create-notebooks --tag-collapse --work-dir=.ipynb_kaggle tutorials || (($?==$NO_TESTS_COLLECTED))
         find tutorials -type d -name .ipynb_kaggle -exec rsync -avz --remove-source-files --include="*.ipynb" --exclude="*" {}/ {}/.. \;
-        mv tutorials/.imports.ipynb tutorials/imports.ipynb
         TUTORIAL_PREFIXES=($(find tutorials -type f -name "*.ipynb" -and -not -ipath "*[*" -exec basename {} ".ipynb" \;))
         for TUTORIAL_PREFIX in "${TUTORIAL_PREFIXES[@]}"; do
           TUTORIALS_WITH_PREFIX=($(find tutorials -type f -name "${TUTORIAL_PREFIX}*.ipynb"))
@@ -96,8 +93,7 @@ jobs:
         apt install -y -qq libgl1-mesa-glx xvfb
         export DISPLAY=":99"
         Xvfb $DISPLAY -screen 0 1024x768x24 > /dev/null 2>&1 &
-        python3 -m pytest --nbval --durations=0 --durations-min=1.0 open_in_kaggle/tutorials/imports.ipynb
-        python3 -m pytest --nbval --durations=0 --durations-min=1.0 open_in_kaggle/tutorials
+        python3 -m pytest --nbval open_in_kaggle/tutorials
       publish_on: github@RBniCS/rbnicsproject.org@open-in-kaggle-rbnicsx
       publish_if_repository: RBniCS/rbnicsproject.org
 
