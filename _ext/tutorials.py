@@ -6,7 +6,7 @@ tutorials = {
         "cases": {
             "-": {
                 "file": "tutorials/01_thermal_block/tutorial_thermal_block.ipynb",
-                "app": "tutorials/thermal_block",
+                "app": "thermal_block",
             }
         },
         "main_case": "-",
@@ -18,7 +18,7 @@ tutorials = {
         "cases": {
             "-": {
                 "file": "tutorials/02_elastic_block/tutorial_elastic_block.ipynb",
-                "app": "tutorials/elastic_block",
+                "app": "elastic_block",
             }
         },
         "main_case": "-",
@@ -30,7 +30,7 @@ tutorials = {
         "cases": {
             "-": {
                 "file": "tutorials/03_hole/tutorial_hole.ipynb",
-                "app": "tutorials/hole",
+                "app": "hole",
             }
         },
         "main_case": "-",
@@ -43,7 +43,7 @@ tutorials = {
             "1": {
                 "description": "Case 1: with parameter-independent boundary conditions",
                 "file": "tutorials/04_graetz/tutorial_graetz_1.ipynb",
-                "app": "tutorials/graetz",
+                "app": "graetz",
             },
             "2": {
                 "description": "Case 2: with parametrized boundary conditions",
@@ -61,7 +61,7 @@ tutorials = {
             "eim": {
                 "description": "EIM",
                 "file": "tutorials/05_gaussian/tutorial_gaussian_eim.ipynb",
-                "app": "tutorials/gaussian",
+                "app": "gaussian",
             },
             "deim": {
                 "description": "DEIM",
@@ -89,7 +89,7 @@ tutorials = {
             "1_pod": {
                 "description": "Case 1-POD: homogeneous boundary and initial conditions, reduction with POD-Galerkin method",
                 "file": "tutorials/06_thermal_block_unsteady/tutorial_thermal_block_unsteady_1_pod.ipynb",
-                "app": "",
+                "app": "thermal_block_unsteady",
             },
             "2_rb": {
                 "description": "Case 2-RB: homogeneous boundary conditions, non-homogeneous initial conditions, reduction with reduced basis method",
@@ -122,7 +122,7 @@ tutorials = {
             "eim": {
                 "description": "EIM",
                 "file": "tutorials/07_nonlinear_elliptic/tutorial_nonlinear_elliptic_eim.ipynb",
-                "app": "",
+                "app": "nonlinear_elliptic",
             },
             "deim": {
                 "description": "DEIM",
@@ -144,7 +144,7 @@ tutorials = {
         "cases": {
             "-": {
                 "file": "tutorials/08_nonlinear_parabolic/tutorial_nonlinear_parabolic_exact.ipynb",
-                "app": "",
+                "app": "nonlinear_parabolic",
             }
         },
         "main_case": "-",
@@ -162,7 +162,7 @@ tutorials = {
             "1_pod": {
                 "description": "Case 1-POD",
                 "file": "tutorials/09_advection_dominated/tutorial_advection_dominated_1_pod.ipynb",
-                "app": "",
+                "app": "advection_dominated",
             },
             "1_rb_rectification": {
                 "description": "Case 1-RB with rectification",
@@ -210,7 +210,7 @@ tutorials = {
             "1_pod": {
                 "description": "Case 1-POD",
                 "file": "tutorials/10_weighted_uq/tutorial_weighted_uq_1_pod.py",
-                "app": "",
+                "app": "weighted_uq",
             },
          },
         "main_case": "1_pod",
@@ -222,7 +222,7 @@ tutorials = {
         "cases": {
             "-": {
                 "file": "tutorials/11_quasi_geostrophic/tutorial_quasi_geostrophic.py",
-                "app": "",
+                "app": "quasi_geostrophic",
             }
         },
         "main_case": "-",
@@ -240,7 +240,7 @@ tutorials = {
             "1_pod": {
                 "description": "Case 1-POD",
                 "file": "tutorials/12_stokes/tutorial_stokes_1_pod.ipynb",
-                "app": "tutorials/stokes",
+                "app": "stokes",
             },
             "2_rb": {
                 "description": "Case 2-RB",
@@ -268,7 +268,7 @@ tutorials = {
             "1_pod": {
                 "description": "Case 1-POD",
                 "file": "tutorials/13_elliptic_optimal_control/tutorial_elliptic_optimal_control_1_pod.ipynb",
-                "app": "tutorials/elliptic_optimal_control",
+                "app": "elliptic_optimal_control",
             },
             "2_rb": {
                 "description": "Case 2-RB",
@@ -278,7 +278,7 @@ tutorials = {
             "2_pod": {
                 "description": "Case 2-POD",
                 "file": "tutorials/13_elliptic_optimal_control/tutorial_elliptic_optimal_control_2_pod.ipynb",
-                "app": "",
+                "app": "graetz_conduction_convection",
             },
         },
         "main_case": "1_pod",
@@ -290,7 +290,7 @@ tutorials = {
         "cases": {
             "-": {
                 "file": "tutorials/14_stokes_optimal_control/tutorial_stokes_optimal_control_1.ipynb",
-                "app": "tutorials/stokes_optimal_control",
+                "app": "stokes_optimal_control",
             }
         },
         "main_case": "-",
@@ -343,7 +343,7 @@ tutorials = {
             "1_inefficient": {
                 "description": "Case 1-Inefficient",
                 "file": "tutorials/17_navier_stokes/tutorial_navier_stokes_1_exact.ipynb",
-                "app": "tutorials/navier_stokes",
+                "app": "navier_stokes",
             },
             "2_inefficient": {
                 "description": "Case 2-Inefficient",
@@ -384,7 +384,7 @@ tutorials = {
         "cases": {
             "-": {
                 "file": "tutorials/20_coanda_effect/tutorial_coanda_effect.ipynb",
-                "app": "",
+                "app": "coanda_effect",
             }
         },
         "main_case": "-",
@@ -396,7 +396,7 @@ tutorials = {
         "cases": {
             "-": {
                 "file": "tutorials/21_thermal_subfin/tutorial_thermal_subfin.ipynb",
-                "app": "",
+                "app": "thermal_subfin",
             }
         },
         "main_case": "-",
@@ -408,7 +408,7 @@ tutorials = {
         "cases": {
             "-": {
                 "file": "tutorials/22_elastic_contact/tutorial_elastic_contact.ipynb",
-                "app": "",
+                "app": "idealized_contact",
             }
         },
         "main_case": "-",
@@ -420,7 +420,7 @@ tutorials = {
         "cases": {
             "-": {
                 "file": "tutorials/23_beam_bridge/tutorial_beam_bridge.ipynb",
-                "app": "",
+                "app": "bridge",
             }
         },
         "main_case": "-",
