@@ -33,7 +33,7 @@ The **RBniCS** Project contains an implementation in **FEniCS** of several reduc
 
 Several tutorials are provided. This software is also a companion of the introductory reduced basis handbook:
 
-    `J. S. Hesthaven, G. Rozza, B. Stamm. Certified Reduced Basis Methods for Parametrized Partial Differential Equations. SpringerBriefs in Mathematics. Springer International Publishing, 2015 <http://www.springer.com/us/book/9783319224695>`__
+    `G. Rozza, F. Ballarin, L. Scandurra, F. Pichi. Real Time Reduced Order Computational Mechanics: Parametric PDEs Worked Out Problems. SISSA Springer Series, Springer Cham, 2024 <https://link.springer.com/book/9783031498916>`__
 
 Authors and contributors
 ------------------------
