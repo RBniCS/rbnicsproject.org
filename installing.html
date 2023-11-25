@@ -1,10 +1,10 @@
-
 <!DOCTYPE html>
 
-<html>
+<html lang="en" data-content_root="./">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta content="RBniCS requires FEniCS, numpy and scipy. Additional requirements are automatically handled during the setup. You can run RBniCS online on Google Colab and ARGOS. A docker image is available on DockerHub." lang="en" name="description" xml:lang="en" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta content="RBniCS requires FEniCS, numpy and scipy. Additional requirements are automatically handled during the setup. You can run RBniCS online on Google Colab and ARGOS. A docker image is available on DockerHub." lang="en" name="description" xml:lang="en" />
 
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -62,17 +62,16 @@
   
   
     <title>Installation &#8212; RBniCS - reduced order modelling in FEniCS</title>
-    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" href="_static/material.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=83e35b93" />
+    <link rel="stylesheet" type="text/css" href="_static/material.css?v=79c92029" />
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-dropdown/2.0.3/jquery.dropdown.min.css" />
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Pangolin" />
-    <link rel="stylesheet" type="text/css" href="_static/css/custom.css" />
-    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
-    <script src="_static/jquery.js"></script>
-    <script src="_static/underscore.js"></script>
-    <script src="_static/doctools.js"></script>
+    <link rel="stylesheet" type="text/css" href="_static/css/custom.css?v=c7510273" />
+    <script src="_static/documentation_options.js?v=5929fcd5"></script>
+    <script src="_static/doctools.js?v=888ff710"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-dropdown/2.0.3/jquery.dropdown.min.js"></script>
-    <script src="_static/js/external_links.js"></script>
+    <script src="_static/js/external_links.js?v=e7f469e6"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="How to contribute" href="contributing.html" />
@@ -339,21 +338,21 @@
         <div class="md-content">
           <article class="md-content__inner md-typeset" role="main">
             
-  
-<h1 id="installing--page-root">Installation<a class="headerlink" href="#installing--page-root" title="Permalink to this headline">¶</a></h1>
-
-<h2 id="prerequisites">Prerequisites<a class="headerlink" href="#prerequisites" title="Permalink to this headline">¶</a></h2>
+  <section id="installation">
+<h1 id="installing--page-root">Installation<a class="headerlink" href="#installing--page-root" title="Link to this heading">¶</a></h1>
+<section id="prerequisites">
+<h2 id="prerequisites">Prerequisites<a class="headerlink" href="#prerequisites" title="Link to this heading">¶</a></h2>
 <p><strong>RBniCS</strong> requires:</p>
 <ul class="simple">
 <li><p><strong>FEniCS</strong> (&gt;= 2018.1.0, python 3), with PETSc, SLEPc, petsc4py and slepc4py for computations during the offline stage;</p></li>
 <li><p><strong>numpy</strong> and <strong>scipy</strong> for computations during the online stage.</p></li>
 </ul>
 <p>Additional requirements are automatically handled during the setup.</p>
-
-
-<h2 id="installation-and-usage">Installation and usage<a class="headerlink" href="#installation-and-usage" title="Permalink to this headline">¶</a></h2>
-
-<h3 id="from-source">From source<a class="headerlink" href="#from-source" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="installation-and-usage">
+<h2 id="installation-and-usage">Installation and usage<a class="headerlink" href="#installation-and-usage" title="Link to this heading">¶</a></h2>
+<section id="from-source">
+<h3 id="from-source">From source<a class="headerlink" href="#from-source" title="Link to this heading">¶</a></h3>
 <p>Simply clone the <strong>RBniCS</strong> public repository:</p>
 <div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">git clone https://github.com/RBniCS/RBniCS.git</span>
 </pre></div>
@@ -362,22 +361,22 @@
 <div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">python3 setup.py install</span>
 </pre></div>
 </div>
-
-
-<h3 id="rbnics-on-google-colab">RBniCS on Google Colab<a class="headerlink" href="#rbnics-on-google-colab" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="rbnics-on-google-colab">
+<h3 id="rbnics-on-google-colab">RBniCS on Google Colab<a class="headerlink" href="#rbnics-on-google-colab" title="Link to this heading">¶</a></h3>
 <p>You can run <strong>RBniCS</strong> online on <a class="reference external" href="https://colab.research.google.com/">Google Colab</a> by running our Jupyter notebooks interactively in any web browser without any required installation. See our <a class="reference internal" href="tutorials.html#tutorials"><span class="std std-ref">Tutorials</span></a> page for more information.</p>
-
-
-<h3 id="rbnics-on-argos">RBniCS on ARGOS<a class="headerlink" href="#rbnics-on-argos" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="rbnics-on-argos">
+<h3 id="rbnics-on-argos">RBniCS on ARGOS<a class="headerlink" href="#rbnics-on-argos" title="Link to this heading">¶</a></h3>
 <p>You can run <strong>RBniCS</strong> online on <a class="reference external" href="https://argos.sissa.it/tutorials">ARGOS</a>, the Advanced Reduced Groupware Online Simulation platform, by running standalone apps interactively in any web browser without any required installation.
 See our <a class="reference internal" href="tutorials.html#tutorials"><span class="std std-ref">Tutorials</span></a> page for more information.</p>
-
-
-<h3 id="rbnics-docker-image">RBniCS docker image<a class="headerlink" href="#rbnics-docker-image" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="rbnics-docker-image">
+<h3 id="rbnics-docker-image">RBniCS docker image<a class="headerlink" href="#rbnics-docker-image" title="Link to this heading">¶</a></h3>
 <p>If you want to try <strong>RBniCS</strong> out but do not have <strong>FEniCS</strong> already installed, you can <a class="reference external" href="https://hub.docker.com/r/rbnics/rbnics/">pull our docker image from DockerHub</a>. All required dependencies are already installed. <strong>RBniCS</strong> tutorials and tests are located at <code class="code docutils literal notranslate"><span class="pre">$FENICS_HOME/RBniCS</span></code></p>
-
-
-
+</section>
+</section>
+</section>
 
 
           </article>
@@ -426,7 +425,7 @@ See our <a class="reference internal" href="tutorials.html#tutorials"><span clas
               
           </div>
             Created using
-            <a href="http://www.sphinx-doc.org/">Sphinx</a> 3.4.1.
+            <a href="http://www.sphinx-doc.org/">Sphinx</a> 7.2.6.
              and
             <a href="https://github.com/bashtage/sphinx-material/">Material for
               Sphinx</a>
