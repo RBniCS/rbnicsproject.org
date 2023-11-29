@@ -37,6 +37,9 @@ jobs:
         run: |
           sudo chown $USER _build -R
           echo "www.rbnicsproject.org" > _build/html/CNAME
+      - name: Remove unnecessary .doctrees folder
+        run: |
+          rm -rf _build/html/.doctrees
       - name: Deploy to GitHub pages
         if: github.repository == 'RBniCS/rbnicsproject.org' && github.ref == 'refs/heads/main'
         run: |
