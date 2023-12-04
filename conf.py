@@ -10,8 +10,8 @@ sys.path.insert(0, os.path.abspath("./_ext"))
 # -- Project information -----------------------------------------------------
 
 project = "RBniCS Project"
-copyright = "2015-, Francesco Ballarin (and contributors)"
-author = "Francesco Ballarin (and contributors)"
+copyright = "2015-2023, the RBniCS and RBniCSx authors"
+author = "Francesco Ballarin"
 
 
 # -- General configuration ---------------------------------------------------
