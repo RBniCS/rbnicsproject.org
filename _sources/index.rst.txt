@@ -35,11 +35,10 @@ Several tutorials are provided. This software is also a companion of the introdu
 
     `G. Rozza, F. Ballarin, L. Scandurra, F. Pichi. Real Time Reduced Order Computational Mechanics: Parametric PDEs Worked Out Problems. SISSA Springer Series, Springer Cham, 2024 <https://link.springer.com/book/9783031498916>`__
 
-Authors and contributors
+Authors
 ------------------------
 
 **RBniCS** is currently developed and maintained at `Università Cattolica del Sacro Cuore <https://www.unicatt.it/>`__ by `Dr. Francesco Ballarin <https://www.francescoballarin.it>`__ in collaboration with `Prof. Gianluigi Rozza <https://people.sissa.it/~grozza/>`__'s group at `SISSA mathLab <http://mathlab.sissa.it/>`__.
-We acknowledge all contributors listed in the `AUTHORS file <https://github.com/RBniCS/RBniCS/blob/master/AUTHORS>`__.
 
 Timeline and funding
 ------------------------
