@@ -30,7 +30,8 @@ and install the package by typing
 
 .. code-block:: console
 
-    python3 setup.py install
+    cd RBniCS
+    python3 -m pip install .
 
 RBniCS on Google Colab
 ~~~~~~~~~~~~~~~~~~~~~~
@@ -46,4 +47,4 @@ See our :ref:`tutorials` page for more information.
 RBniCS docker image
 ~~~~~~~~~~~~~~~~~~~
 
-If you want to try **RBniCS** out but do not have **FEniCS** already installed, you can `pull our docker image from DockerHub <https://hub.docker.com/r/rbnics/rbnics/>`__. All required dependencies are already installed. **RBniCS** tutorials and tests are located at :code:`$FENICS_HOME/RBniCS`
+If you want to try **RBniCS** out but do not have **FEniCS** already installed, you can `pull our docker image from DockerHub <https://hub.docker.com/r/rbnics/rbnics/>`__. All required dependencies are already installed. **RBniCS** tutorials and tests are located at :code:`/root/RBniCS`
