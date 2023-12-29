@@ -4,7 +4,8 @@ button[data-md-color-primary=mathlab] {
 }
 
 [data-md-color-primary=mathlab] .md-typeset a {
-    color: #07549A
+    color: #07549A;
+    text-decoration: underline;
 }
 
 [data-md-color-primary=mathlab] .md-header,
@@ -250,6 +251,10 @@ button[data-md-color-accent=mathlab] {
 .tutorial-buttons {
     display: flex;
     flex-wrap: wrap;
+}
+
+.tutorial-buttons a {
+    text-decoration: none  !important;
 }
 
 /* Toggleable divs
