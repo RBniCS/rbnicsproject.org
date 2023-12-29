@@ -1,6 +1,6 @@
 /* Customize palette */
 button[data-md-color-primary=mathlab] {
-    background-color: #07549A
+    background-color: #07549A;
 }
 
 [data-md-color-primary=mathlab] .md-typeset a {
@@ -10,30 +10,30 @@ button[data-md-color-primary=mathlab] {
 
 [data-md-color-primary=mathlab] .md-header,
 [data-md-color-primary=mathlab] .md-hero {
-    background-color: #07549A
+    background-color: #07549A;
 }
 
 [data-md-color-primary=mathlab] .md-nav__link--active,
 [data-md-color-primary=mathlab] .md-nav__link:active {
-    color: #07549A
+    color: #07549A;
 }
 
 [data-md-color-primary=mathlab] .md-nav__item--nested>.md-nav__link {
-    color: inherit
+    color: inherit;
 }
 
 button[data-md-color-accent=mathlab] {
-    background-color: #F79A25
+    background-color: #F79A25;
 }
 
 [data-md-color-accent=mathlab] .md-typeset a:active,
 [data-md-color-accent=mathlab] .md-typeset a:hover {
-    color: #F79A25
+    color: #F79A25;
 }
 
 [data-md-color-accent=mathlab] .md-typeset .codehilite pre::-webkit-scrollbar-thumb:hover,
 [data-md-color-accent=mathlab] .md-typeset pre code::-webkit-scrollbar-thumb:hover {
-    background-color: #F79A25
+    background-color: #F79A25;
 }
 
 [data-md-color-accent=mathlab] .md-nav__link:focus,
@@ -45,47 +45,47 @@ button[data-md-color-accent=mathlab] {
 [data-md-color-accent=mathlab] .md-typeset [id] .headerlink:focus,
 [data-md-color-accent=mathlab] .md-typeset [id]:hover .headerlink:hover,
 [data-md-color-accent=mathlab] .md-typeset [id]:target .headerlink {
-    color: #F79A25
+    color: #F79A25;
 }
 
 [data-md-color-accent=mathlab] .md-search__scrollwrap::-webkit-scrollbar-thumb:hover {
-    background-color: #F79A25
+    background-color: #F79A25;
 }
 
 [data-md-color-accent=mathlab] .md-search-result__link:hover,
 [data-md-color-accent=mathlab] .md-search-result__link[data-md-state=active] {
-    background-color: rgba(255, 23, 68, .1)
+    background-color: rgba(255, 23, 68, .1);
 }
 
 [data-md-color-accent=mathlab] .md-sidebar__scrollwrap::-webkit-scrollbar-thumb:hover {
-    background-color: #F79A25
+    background-color: #F79A25;
 }
 
 [data-md-color-accent=mathlab] .md-source-file:hover:before {
-    background-color: #F79A25
+    background-color: #F79A25;
 }
 
 @media only screen and (max-width:59.9375em) {
     [data-md-color-primary=mathlab] .md-nav__source {
-        background-color: #F79A25
+        background-color: #F79A25;
     }
 }
 
 @media only screen and (max-width:76.1875em) {
     html [data-md-color-primary=mathlab] .md-nav--primary .md-nav__title--site {
-        background-color: #07549A
+        background-color: #07549A;
     }
 }
 
 @media only screen and (min-width:76.25em) {
     [data-md-color-primary=mathlab] .md-tabs {
-        background-color: #07549A
+        background-color: #07549A;
     }
 }
 
 /* Hide undesired items */
 .md-sidebar--secondary, .md-footer {
-    display: None
+    display: None;
 }
 
 @media only screen and (min-width: 76.25em) {
@@ -101,7 +101,7 @@ button[data-md-color-accent=mathlab] {
 
 @media only screen and (min-width: 76.25em) {
     .md-sidebar--primary {
-        display: None
+        display: None;
     }
 }
 
