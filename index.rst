@@ -52,7 +52,9 @@ Timeline and funding
    * - 2020-2022
      - Financial support of the `NA-from-PDEs PRIN MIUR project  <https://people.sissa.it/~grozza/na-from-pdes/>`__ (PI: `Prof. Gianluigi Rozza <https://people.sissa.it/~grozza/>`__, unit: `SISSA mathLab <http://mathlab.sissa.it/>`__) for the continuation of **RBniCS** development.
    * - 2021
-     - `Università Cattolica del Sacro Cuore <https://www.unicatt.it/>`__ joins the development. `SISSA mathLab <http://mathlab.sissa.it/>`__ and the `Università Cattolica del Sacro Cuore <https://www.unicatt.it/>`__ are now partner institutions in the development of **RBniCS**.
+     - `Università Cattolica del Sacro Cuore <https://www.unicatt.it/>`__ joins the development. `SISSA mathLab <http://mathlab.sissa.it/>`__ and `Università Cattolica del Sacro Cuore <https://www.unicatt.it/>`__ are now partner institutions in the development of **RBniCS**.
+   * - 2024
+     - Handbook based on **RBniCS** is published within the SISSA Springer Series.
 
 
 Learn more about RBniCS
