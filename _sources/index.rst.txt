@@ -38,7 +38,7 @@ Several tutorials are provided. This software is also a companion of the introdu
 Authors
 ------------------------
 
-**RBniCS** is currently developed and maintained at `Università Cattolica del Sacro Cuore <https://www.unicatt.it/>`__ by `Dr. Francesco Ballarin <https://www.francescoballarin.it>`__ in collaboration with `Prof. Gianluigi Rozza <https://people.sissa.it/~grozza/>`__'s group at `SISSA mathLab <http://mathlab.sissa.it/>`__.
+**RBniCS** was developed by `Dr. Francesco Ballarin <https://www.francescoballarin.it>`__, currently at `Università Cattolica del Sacro Cuore <https://www.unicatt.it/>`__,  in collaboration with `Prof. Gianluigi Rozza <https://people.sissa.it/~grozza/>`__'s group at `SISSA mathLab <http://mathlab.sissa.it/>`__.
 
 Timeline and funding
 ------------------------
