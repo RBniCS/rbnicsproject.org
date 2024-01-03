@@ -52,7 +52,7 @@ jobs:
         adios4dolfinx@https://github.com/jorgensd/adios4dolfinx.git@current%rbnicsx
         rbnicsx@https://github.com/RBniCS/RBniCSx.git@current£--check-build-dependencies --no-build-isolation
       test_script: |
-        apt install -y -qq libgl1-mesa-glx xvfb
+        apt install -y -qq xvfb
         export DISPLAY=":99"
         Xvfb $DISPLAY -screen 0 1024x768x24 > /dev/null 2>&1 &
         python3 -m pytest --nbval open_in_colab/tutorials
@@ -92,7 +92,7 @@ jobs:
         adios4dolfinx@https://github.com/jorgensd/adios4dolfinx.git@current%rbnicsx
         rbnicsx@https://github.com/RBniCS/RBniCSx.git@current£--check-build-dependencies --no-build-isolation€export PETSC_DIR=${INSTALL_PREFIX}
       test_script: |
-        apt install -y -qq libgl1-mesa-glx xvfb
+        apt install -y -qq xvfb
         export DISPLAY=":99"
         Xvfb $DISPLAY -screen 0 1024x768x24 > /dev/null 2>&1 &
         python3 -m pytest --nbval open_in_kaggle/tutorials
