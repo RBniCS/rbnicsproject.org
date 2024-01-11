@@ -5,7 +5,6 @@ on:
     branches:
       - "**"
       - "!gh-pages"
-      - "!open-in-colab-rbnicsx"
   pull_request:
     branches:
       - main
