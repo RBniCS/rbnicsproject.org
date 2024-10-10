@@ -41,7 +41,7 @@ You can run **RBniCS** online on `Google Colab <https://colab.research.google.co
 RBniCS on ARGOS
 ~~~~~~~~~~~~~~~
 
-You can run **RBniCS** online on `ARGOS <https://argos.sissa.it/tutorials>`__, the Advanced Reduced Groupware Online Simulation platform, by running standalone apps interactively in any web browser without any required installation.
+You can run **RBniCS** online on `ARGOS <https://argos-edu.sissa.it/>`__, the Advanced Reduced Groupware Online Simulation platform, by running standalone apps interactively in any web browser without any required installation.
 See our :ref:`tutorials` page for more information.
 
 RBniCS docker image
