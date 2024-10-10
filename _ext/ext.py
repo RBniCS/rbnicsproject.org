@@ -61,7 +61,7 @@ class LocalPages(object):
         elif type_ == "notebook":
             link = "https://colab.research.google.com/github/RBniCS/RBniCS/blob/open-in-colab/" + link
         elif type_ == "app":
-            link = "https://argos.sissa.it/" + link
+            link = "https://argos-edu.sissa.it/" + link
         else:
             raise RuntimeError("Invalid type")
         return f"{link}"
@@ -92,7 +92,7 @@ class Tutorials(Directive):
                 "notebook", "https://youtu.be/AD0sq2wjYKE?t=49",
                 lambda _1, _2: "Video on how to run tutorials on Google Colab"),
             self._button(
-                "app", "https://argos.sissa.it/",
+                "app", "https://argos-edu.sissa.it/",
                 lambda _1, _2: "Learn more about ARGOS")
         ])
         intro = f"""
@@ -100,7 +100,7 @@ class Tutorials(Directive):
 <b>RBniCS</b> is accompanied by several tutorials, that can be run on a local installation of the library,
 or interactively in any web browser either
 on <a href="https://colab.research.google.com/" target="_blank">Google Colab</a> or
-on <a href="https://argos.sissa.it/tutorials" target="_blank">ARGOS</a>, the Advanced Reduced Groupware Online Simulation platform,
+on <a href="https://argos-edu.sissa.it/" target="_blank">ARGOS</a>, the Advanced Reduced Groupware Online Simulation platform,
 without any required installation.
 <div class="tutorial-buttons">
 {intro_buttons}
