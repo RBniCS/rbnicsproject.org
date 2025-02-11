@@ -3,7 +3,7 @@ Installation
 .. meta::
     :description lang=en:
         RBniCS requires FEniCS, numpy and scipy. Additional requirements are automatically handled during the setup.
-        You can run RBniCS online on Google Colab and ARGOS. A docker image is available on DockerHub.
+        You can run RBniCS online on Google Colab and ARGOS.
 
 Prerequisites
 -------------
@@ -43,8 +43,3 @@ RBniCS on ARGOS
 
 You can run **RBniCS** online on `ARGOS <https://argos-edu.sissa.it/>`__, the Advanced Reduced Groupware Online Simulation platform, by running standalone apps interactively in any web browser without any required installation.
 See our :ref:`tutorials` page for more information.
-
-RBniCS docker image
-~~~~~~~~~~~~~~~~~~~
-
-If you want to try **RBniCS** out but do not have **FEniCS** already installed, you can `pull our docker image from DockerHub <https://hub.docker.com/r/rbnics/rbnics/>`__. All required dependencies are already installed. **RBniCS** tutorials and tests are located at :code:`/root/RBniCS`
